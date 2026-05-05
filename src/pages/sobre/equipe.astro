@@ -9,15 +9,15 @@ import { config } from '../../data/clinic-config';
 <Layout
   title="Nossa Equipe"
   description={config.doctor
-    ? `Conheca ${config.doctor.name} (${config.doctor.cro}) e a equipe da ${config.name}. Profissionais dedicados ao seu sorriso.`
-    : `Conheca a equipe da ${config.name}. Profissionais dedicados ao seu sorriso.`
+    ? `Conheça ${config.doctor.name} (${config.doctor.cro}) e a equipe da ${config.name}. Profissionais dedicados ao seu sorriso.`
+    : `Conheça a equipe da ${config.name}. Profissionais dedicados ao seu sorriso.`
   }
 >
 
   <section class="bg-warm-900 py-16 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Breadcrumb items={[
-        { label: 'Inicio', href: '/' },
+        { label: 'Início', href: '/' },
         { label: 'Sobre', href: '/sobre' },
         { label: 'Nossa Equipe' },
       ]} />
@@ -64,10 +64,10 @@ import { config } from '../../data/clinic-config';
             <p class="text-gold-600 font-semibold mb-6">{config.doctor.title} — {config.doctor.cro}</p>
 
             <p class="text-warm-400 leading-relaxed mb-4">
-              A frente da {config.name}, {config.doctor.name.split(' ')[0]} {config.doctor.name.split(' ')[1]} combina excelencia tecnica com um atendimento genuinamente humanizado. Sua abordagem integrativa considera cada paciente como um todo — corpo, mente e sorriso.
+              À frente da {config.name}, {config.doctor.name.split(' ')[0]} {config.doctor.name.split(' ')[1]} combina excelência técnica com um atendimento genuinamente humanizado. Sua abordagem integrativa considera cada paciente como um todo — corpo, mente e sorriso.
             </p>
             <p class="text-warm-400 leading-relaxed mb-6">
-              Com formacao continua e paixao pela odontologia estetica e funcional, lidera uma equipe dedicada a transformar sorrisos e devolver confianca.
+              Com formação contínua e paixão pela odontologia estética e funcional, lidera uma equipe dedicada a transformar sorrisos e devolver confiança.
             </p>
 
             <div class="flex flex-wrap gap-2">
@@ -90,10 +90,10 @@ import { config } from '../../data/clinic-config';
             </div>
             <h2 class="text-3xl font-bold text-warm-900 mb-4">Nossa Equipe de Profissionais</h2>
             <p class="text-warm-400 leading-relaxed mb-4">
-              A {config.name} conta com uma equipe de profissionais qualificados e dedicados ao seu bem-estar. Cada membro traz experiencia e paixao pela odontologia.
+              A {config.name} conta com uma equipe de profissionais qualificados e dedicados ao seu bem-estar. Cada membro traz experiência e paixão pela odontologia.
             </p>
             <p class="text-warm-400 leading-relaxed">
-              Nosso compromisso e oferecer um atendimento humanizado, onde voce se sente acolhido e seguro em cada etapa do tratamento.
+              Nosso compromisso é oferecer um atendimento humanizado, onde você se sente acolhido e seguro em cada etapa do tratamento.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ import { config } from '../../data/clinic-config';
         {config.doctor ? `Agende com ${config.doctor.name.split(' ')[0]} ${config.doctor.name.split(' ')[1]}` : 'Agende sua consulta'}
       </h2>
       <p class="text-white/40 mb-8">
-        Atendimento particular, sem filas. Cuidado que faz a diferenca.
+        Atendimento particular, sem filas. Cuidado que faz a diferença.
       </p>
       <a
         href={WHATSAPP_URL}

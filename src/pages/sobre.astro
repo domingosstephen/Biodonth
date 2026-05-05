@@ -7,15 +7,15 @@ import { config } from '../data/clinic-config';
 ---
 
 <Layout
-  title="Sobre a Clinica"
-  description={`Conheca a ${config.name} em ${config.neighborhood}: odontologia integrada com atendimento humanizado desde ${config.established}.`}
+  title="Sobre a Clínica"
+  description={`Conheça a ${config.name} em ${config.neighborhood}: odontologia integrada com atendimento humanizado desde ${config.established}.`}
 >
 
   <section class="bg-warm-900 py-16 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Breadcrumb items={[
-        { label: 'Inicio', href: '/' },
-        { label: 'Sobre a Clinica' },
+        { label: 'Início', href: '/' },
+        { label: 'Sobre a Clínica' },
       ]} />
       <div class="max-w-3xl animate-on-scroll">
         <span class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-gold-400/60 mb-4">
@@ -23,11 +23,11 @@ import { config } from '../data/clinic-config';
           Desde {config.established}
         </span>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
-          Cuidado que vai alem<br />
-          <span class="bg-gradient-to-r from-gold-300 to-gold-500 bg-clip-text text-transparent">do consultorio</span>
+          Cuidado que vai além<br />
+          <span class="bg-gradient-to-r from-gold-300 to-gold-500 bg-clip-text text-transparent">do consultório</span>
         </h1>
         <p class="mt-6 text-lg text-white/50 leading-relaxed">
-          Comprometida com a saude bucal de nossos pacientes desde {config.established}, a Biodonth une profissionais qualificados, ambiente acolhedor e tecnologia de ponta.
+          Comprometida com a saúde bucal de nossos pacientes desde {config.established}, a Biodonth une profissionais qualificados, ambiente acolhedor e tecnologia de ponta.
         </p>
       </div>
     </div>
@@ -41,29 +41,29 @@ import { config } from '../data/clinic-config';
           <div class="relative">
             <div class="absolute -inset-3 bg-gradient-to-br from-gold-100/40 to-transparent rounded-3xl"></div>
             <div class="relative img-zoom rounded-2xl overflow-hidden">
-              <img src="/images/gallery-3.webp" alt={`Interior da ${config.name}`} class="w-full aspect-[3/4] object-cover" loading="lazy" />
+              <img src="/images/gallery-3.webp" alt={`Interior da clínica ${config.name}`} class="w-full aspect-[3/4] object-cover" loading="lazy" />
             </div>
           </div>
         </div>
         <div class="animate-on-scroll slide-right">
           <span class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-gold-600 mb-4">
             <span class="w-8 h-[1px] bg-gold-400"></span>
-            Nossa Missao
+            Nossa Missão
           </span>
           <h2 class="text-3xl font-bold text-warm-900 leading-[1.1] mb-6">
-            Odontologia integrada: saude, estetica e <span class="gold-text">bem-estar</span>
+            Odontologia integrada: saúde, estética e <span class="gold-text">bem-estar</span>
           </h2>
           <p class="text-warm-400 leading-relaxed mb-4">
-            <strong class="text-warm-700">Missao:</strong> {config.mission}
+            <strong class="text-warm-700">Missão:</strong> {config.mission}
           </p>
           <p class="text-warm-400 leading-relaxed mb-4">
-            <strong class="text-warm-700">Visao:</strong> {config.vision}
+            <strong class="text-warm-700">Visão:</strong> {config.vision}
           </p>
           <p class="text-warm-400 leading-relaxed mb-4">
             <strong class="text-warm-700">Valores:</strong> {config.values}
           </p>
           <p class="text-warm-400 leading-relaxed">
-            Localizada no coracao de {config.neighborhood}, {config.region}, nossa clinica foi pensada para ser um espaco acolhedor onde cada paciente se sente seguro e respeitado. Priorizamos a prevencao e utilizamos materiais de qualidade para garantir os melhores resultados.
+            Localizada no coração de {config.neighborhood}, {config.region}, nossa clínica foi pensada para ser um espaço acolhedor onde cada paciente se sente seguro e respeitado. Priorizamos a prevenção e utilizamos materiais de qualidade para garantir os melhores resultados.
           </p>
         </div>
       </div>
@@ -81,7 +81,7 @@ import { config } from '../data/clinic-config';
               <path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
             </svg>
           </div>
-          <h3 class="font-bold text-warm-800 mb-2">Etica</h3>
+          <h3 class="font-bold text-warm-800 mb-2">Ética</h3>
           <p class="text-sm text-warm-400 leading-relaxed">Atuamos com integridade em cada atendimento, priorizando sempre o melhor para o paciente.</p>
         </div>
         <div class="luxury-card p-7 animate-on-scroll">
@@ -90,7 +90,7 @@ import { config } from '../data/clinic-config';
               <path d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
             </svg>
           </div>
-          <h3 class="font-bold text-warm-800 mb-2">Excelencia</h3>
+          <h3 class="font-bold text-warm-800 mb-2">Excelência</h3>
           <p class="text-sm text-warm-400 leading-relaxed">Investimos em tecnologia de ponta e materiais de qualidade para os melhores resultados.</p>
         </div>
         <div class="luxury-card p-7 animate-on-scroll">
@@ -100,7 +100,7 @@ import { config } from '../data/clinic-config';
             </svg>
           </div>
           <h3 class="font-bold text-warm-800 mb-2">Credibilidade</h3>
-          <p class="text-sm text-warm-400 leading-relaxed">Construimos confianca com transparencia em cada etapa do tratamento.</p>
+          <p class="text-sm text-warm-400 leading-relaxed">Construímos confiança com transparência em cada etapa do tratamento.</p>
         </div>
         <div class="luxury-card p-7 animate-on-scroll">
           <div class="w-12 h-12 bg-gold-50 rounded-xl flex items-center justify-center mb-5">
@@ -108,8 +108,8 @@ import { config } from '../data/clinic-config';
               <path d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
             </svg>
           </div>
-          <h3 class="font-bold text-warm-800 mb-2">Confianca Humana</h3>
-          <p class="text-sm text-warm-400 leading-relaxed">Atendimento acolhedor e personalizado — cada paciente e unico e merece cuidado excepcional.</p>
+          <h3 class="font-bold text-warm-800 mb-2">Confiança Humana</h3>
+          <p class="text-sm text-warm-400 leading-relaxed">Atendimento acolhedor e personalizado — cada paciente é único e merece cuidado excepcional.</p>
         </div>
       </div>
     </div>
@@ -129,7 +129,7 @@ import { config } from '../data/clinic-config';
 
   <section class="py-16 lg:py-20 bg-warm-900">
     <div class="max-w-3xl mx-auto px-4 text-center animate-on-scroll">
-      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Conheca a Biodonth pessoalmente</h2>
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Conheça a Biodonth pessoalmente</h2>
       <p class="text-white/40 mb-8">Agende uma visita e veja como cuidamos de cada detalhe para o seu conforto.</p>
       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-warm-900 font-bold px-8 py-4 rounded-full hover:bg-gold-50 transition-all btn-press">
         Agendar Visita

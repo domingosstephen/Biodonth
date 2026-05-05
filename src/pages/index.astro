@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import ServiceCard from '../components/ServiceCard.astro';
-import TestimonialCard from '../components/TestimonialCard.astro';
 import Gallery from '../components/Gallery';
 import AnimatedCounter from '../components/AnimatedCounter';
 import { services, WHATSAPP_URL, PHONE, WHATSAPP_PHONE, ADDRESS } from '../data/services';
@@ -13,19 +12,19 @@ const doctorCro = config.doctor?.cro ?? '';
 const doctorDesc = config.doctor ? `${config.doctor.name} (${config.doctor.cro}). ` : '';
 
 const preventionPrograms = [
-  { name: 'Check-up Preventivo Digital', icon: '🔍' },
-  { name: 'Kids', icon: '👶' },
-  { name: 'Gestante', icon: '🤰' },
-  { name: 'Atleta', icon: '🏃' },
-  { name: 'Empresa', icon: '🏢' },
-  { name: 'Melhor Idade 60+', icon: '👴' },
+  { name: 'Check-up Preventivo Digital', icon: 'M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z' },
+  { name: 'Kids', icon: 'M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75z' },
+  { name: 'Gestante', icon: 'M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z' },
+  { name: 'Atleta', icon: 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z' },
+  { name: 'Empresa', icon: 'M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21' },
+  { name: 'Melhor Idade 60+', icon: 'M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z' },
 ];
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Dentist',
   name: config.name,
-  description: `Clinica odontologica integrada em ${config.neighborhood}, ${config.city}. ${doctorDesc}Ortodontia, implantes, facetas, clareamento, odontopediatria. Desde ${config.established}.`,
+  description: `Clínica odontológica integrada em ${config.neighborhood}, ${config.city}. ${doctorDesc}Ortodontia, implantes, facetas, clareamento, odontopediatria. Desde ${config.established}.`,
   url: config.siteUrl,
   telephone: `+${config.phone.replace(/\D/g, '')}`,
   address: {
@@ -44,7 +43,7 @@ const schema = {
 
 <Layout
   title={`${config.name} — Dentista em ${config.neighborhood}, ${config.city}`}
-  description={`Clinica odontologica integrada em ${config.neighborhood}. ${doctorDesc}Ortodontia, implantes, facetas, clareamento, odontopediatria. Desde ${config.established}. Agende pelo WhatsApp.`}
+  description={`Clínica odontológica integrada em ${config.neighborhood}. ${doctorDesc}Ortodontia, implantes, facetas, clareamento, odontopediatria. Desde ${config.established}. Agende pelo WhatsApp.`}
   schema={schema}
   preloadImage="/images/hero.webp"
 >
@@ -66,12 +65,12 @@ const schema = {
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-[4rem] font-extrabold text-warm-900 leading-[1.05] tracking-tight animate-on-scroll">
-            Comprometida com a
-            <span class="block gold-text mt-1">saude bucal de voce</span>
+            Sorriso saudável começa com
+            <span class="block gold-text mt-1">cuidado de verdade</span>
           </h1>
 
           <p class="mt-7 text-lg text-warm-400 leading-relaxed animate-on-scroll">
-            Profissionais qualificados, ambiente acolhedor, tecnologia de ponta e materiais de qualidade. Na Biodonth, priorizamos a prevencao e o atendimento personalizado e excepcional.
+            Profissionais qualificados, ambiente acolhedor, tecnologia de ponta e materiais de qualidade. Na Biodonth, priorizamos a prevenção e o atendimento personalizado e excepcional.
           </p>
 
           <div class="mt-10 flex flex-col sm:flex-row gap-4 animate-on-scroll">
@@ -91,27 +90,20 @@ const schema = {
               href="/servicos"
               class="inline-flex items-center justify-center gap-2 border border-warm-200 text-warm-600 font-semibold px-8 py-4 rounded-full hover:border-gold-300 hover:text-gold-600 transition-all text-[15px]"
             >
-              Nossos Servicos
+              Nossos Serviços
             </a>
           </div>
 
           <!-- Trust line -->
           <div class="mt-10 flex items-center gap-4 animate-on-scroll">
-            <div class="flex -space-x-2">
-              <div class="w-8 h-8 bg-gold-100 rounded-full border-2 border-white flex items-center justify-center text-[10px] font-bold text-gold-600">B</div>
-              <div class="w-8 h-8 bg-gold-100 rounded-full border-2 border-white flex items-center justify-center text-[10px] font-bold text-gold-600">D</div>
-              <div class="w-8 h-8 bg-gold-100 rounded-full border-2 border-white flex items-center justify-center text-[10px] font-bold text-gold-600">T</div>
+            <div class="flex gap-0.5">
+              {Array.from({ length: 5 }).map(() => (
+                <svg class="w-3.5 h-3.5 text-gold-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              ))}
             </div>
-            <div>
-              <div class="flex gap-0.5">
-                {Array.from({ length: 5 }).map(() => (
-                  <svg class="w-3.5 h-3.5 text-gold-400" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                  </svg>
-                ))}
-              </div>
-              <p class="text-[11px] text-warm-400 mt-0.5">Pacientes satisfeitos desde {config.established}</p>
-            </div>
+            <p class="text-[11px] text-warm-400">Em Arthur Alvim desde {config.established} — cuidando de famílias da Zona Leste</p>
           </div>
         </div>
 
@@ -165,12 +157,12 @@ const schema = {
         </div>
         <div class="w-px h-8 bg-warm-100 hidden md:block"></div>
         <div class="text-center animate-on-scroll">
-          <p class="text-[11px] uppercase tracking-[0.2em] text-warm-300 font-medium">Horario</p>
-          <p class="text-sm font-bold text-warm-700 mt-1">Seg-Sab</p>
+          <p class="text-[11px] uppercase tracking-[0.2em] text-warm-300 font-medium">Horário</p>
+          <p class="text-sm font-bold text-warm-700 mt-1">Seg-Sáb</p>
         </div>
         <div class="w-px h-8 bg-warm-100 hidden md:block"></div>
         <div class="text-center animate-on-scroll">
-          <p class="text-[11px] uppercase tracking-[0.2em] text-warm-300 font-medium">Localizacao</p>
+          <p class="text-[11px] uppercase tracking-[0.2em] text-warm-300 font-medium">Localização</p>
           <p class="text-sm font-bold text-warm-700 mt-1">{config.neighborhood}, {config.state}</p>
         </div>
         <div class="w-px h-8 bg-warm-100 hidden md:block"></div>
@@ -186,9 +178,9 @@ const schema = {
   <section class="py-24 lg:py-32 relative">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
       <SectionHeading
-        label="Nossos Servicos"
+        label="Nossos Serviços"
         title="Tratamentos que transformam sorrisos"
-        subtitle="Da prevencao a estetica — cada tratamento e planejado com cuidado e executado com excelencia."
+        subtitle="Da prevenção à estética — cada tratamento é planejado com cuidado e executado com excelência."
       />
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 stagger">
@@ -204,7 +196,7 @@ const schema = {
 
       <div class="text-center mt-14 animate-on-scroll">
         <a href="/servicos" class="inline-flex items-center gap-2 text-gold-600 font-semibold hover:text-gold-700 transition-colors link-underline text-sm tracking-wide">
-          Ver todos os servicos
+          Ver todos os serviços
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path d="M9 5l7 7-7 7" />
           </svg>
@@ -217,15 +209,19 @@ const schema = {
   <section class="py-20 lg:py-28 bg-gold-50/50 border-y border-gold-100/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeading
-        label="Programas de Prevencao"
-        title="Prevencao para todas as fases da vida"
+        label="Programas de Prevenção"
+        title="Prevenção para todas as fases da vida"
         subtitle="Programas especializados de prevenção odontológica para cada momento e necessidade."
       />
 
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 stagger">
         {preventionPrograms.map((program) => (
           <div class="luxury-card p-5 text-center animate-on-scroll hover:border-gold-300">
-            <span class="text-3xl block mb-3">{program.icon}</span>
+            <div class="w-10 h-10 bg-gold-50 rounded-xl flex items-center justify-center mx-auto mb-3">
+              <svg class="w-5 h-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d={program.icon} />
+              </svg>
+            </div>
             <p class="text-sm font-bold text-warm-700">{program.name}</p>
           </div>
         ))}
@@ -243,7 +239,7 @@ const schema = {
             <div class="relative img-zoom rounded-2xl overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80"
-                alt={`Clinica ${config.name}`}
+                alt={`Clínica ${config.name}`}
                 class="w-full aspect-[3/4] object-cover"
                 width="600"
                 height="800"
@@ -256,28 +252,28 @@ const schema = {
         <div class="animate-on-scroll slide-right">
           <span class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-gold-600 mb-4">
             <span class="w-8 h-[1px] bg-gold-400"></span>
-            Sobre Nos
+            Sobre Nós
           </span>
           <h2 class="text-3xl sm:text-4xl font-bold text-warm-900 leading-[1.1] mb-6">
             Odontologia integrada:<br />cuidado que vai<br />
-            <span class="gold-text">alem do sorriso</span>
+            <span class="gold-text">além do sorriso</span>
           </h2>
           <p class="text-warm-400 leading-relaxed mb-5">
-            Desde {config.established}, a Biodonth e comprometida com a saude bucal de nossos pacientes. Com uma equipe de profissionais qualificados, ambiente acolhedor e tecnologia de ponta, priorizamos a prevencao e o atendimento personalizado.
+            Desde {config.established}, a Biodonth é comprometida com a saúde bucal de nossos pacientes. Com uma equipe de profissionais qualificados, ambiente acolhedor e tecnologia de ponta, priorizamos a prevenção e o atendimento personalizado.
           </p>
           <p class="text-warm-400 leading-relaxed mb-8">
-            <strong class="text-warm-600">Nossa visao:</strong> {config.vision}
+            <strong class="text-warm-600">Nossa visão:</strong> {config.vision}
           </p>
 
           <!-- Stats -->
           <div class="grid grid-cols-3 gap-6 mb-8">
             <AnimatedCounter client:visible value={services.length} suffix="+" label="Especialidades" />
             <AnimatedCounter client:visible value={new Date().getFullYear() - config.established} suffix="+" label="Anos" />
-            <AnimatedCounter client:visible value={100} suffix="%" label="Dedicacao" />
+            <AnimatedCounter client:visible value={5} suffix="" label="Estrelas no Google" />
           </div>
 
           <a href="/sobre" class="inline-flex items-center gap-2 bg-warm-900 text-white font-semibold px-7 py-3.5 rounded-full hover:bg-warm-800 transition-all btn-press text-sm tracking-wide">
-            Conheca Nossa Clinica
+            Conheça Nossa Clínica
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path d="M9 5l7 7-7 7" />
             </svg>
@@ -291,49 +287,56 @@ const schema = {
   <section class="py-24 lg:py-32 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeading
-        label="Nossa Clinica"
-        title="Um espaco pensado para voce"
-        subtitle="Conheca o ambiente onde cuidado e tecnologia se encontram."
+        label="Nossa Clínica"
+        title="Um espaço pensado para você"
+        subtitle="Conheça o ambiente onde cuidado e tecnologia se encontram."
       />
 
       <Gallery client:visible />
     </div>
   </section>
 
-  <!-- ============ TESTIMONIALS ============ -->
+  <!-- ============ POR QUE BIODONTH ============ -->
   <section class="py-24 lg:py-32 bg-warm-50 relative">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
       <SectionHeading
-        label="Depoimentos"
-        title="O que nossos pacientes dizem"
-        subtitle="Historias reais de quem confiou no nosso cuidado."
+        label="Por que a Biodonth"
+        title="Por que pacientes escolhem a Biodonth"
+        subtitle="Razões concretas para confiar no nosso cuidado."
       />
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5 stagger">
-        <TestimonialCard
-          name="Mariana S."
-          treatment="Facetas"
-          quote="Sempre tive vergonha de sorrir. Depois das facetas, minha autoestima mudou completamente. A equipe da Biodonth e maravilhosa e super cuidadosa."
-        />
-        <TestimonialCard
-          name="Carlos R."
-          treatment="Implante Dentario"
-          quote="Perdi um dente ha anos e evitava sorrir. O implante ficou tao natural que ninguem percebe. Recomendo a Biodonth de olhos fechados."
-        />
-        <TestimonialCard
-          name="Ana Paula L."
-          treatment="Ortodontia"
-          quote="Atendimento humanizado de verdade. Me senti acolhida desde a primeira consulta. Os resultados superaram minhas expectativas."
-        />
+        <div class="luxury-card p-7 lg:p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-gold-50 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-warm-800 mb-2">+{new Date().getFullYear() - config.established} anos de experiência</h3>
+          <p class="text-sm text-warm-400 leading-relaxed">Desde {config.established} atendendo famílias de Arthur Alvim e região com odontologia integrada de qualidade.</p>
+        </div>
+        <div class="luxury-card p-7 lg:p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-gold-50 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-warm-800 mb-2">{services.length} especialidades em um só lugar</h3>
+          <p class="text-sm text-warm-400 leading-relaxed">Da prevenção à reabilitação completa — toda a família atendida sem precisar trocar de clínica.</p>
+        </div>
+        <div class="luxury-card p-7 lg:p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-gold-50 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-warm-800 mb-2">Atendimento humanizado</h3>
+          <p class="text-sm text-warm-400 leading-relaxed">Cuidado acolhedor e personalizado — cada paciente é único e merece atenção excepcional.</p>
+        </div>
       </div>
 
       <div class="text-center mt-14 animate-on-scroll">
-        <a href="/depoimentos" class="inline-flex items-center gap-2 text-gold-600 font-semibold hover:text-gold-700 transition-colors link-underline text-sm tracking-wide">
-          Ver mais depoimentos
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
+        <p class="text-sm text-warm-400">Em breve, depoimentos reais dos nossos pacientes.</p>
       </div>
     </div>
   </section>
@@ -352,7 +355,7 @@ const schema = {
           <span class="bg-gradient-to-r from-gold-300 to-gold-500 bg-clip-text text-transparent">o seu sorriso?</span>
         </h2>
         <p class="text-lg text-white/50 mb-10 max-w-xl mx-auto">
-          Agende uma avaliacao sem compromisso. Vamos criar juntos o plano ideal para voce.
+          Agende uma avaliação sem compromisso. Vamos criar juntos o plano ideal para você.
         </p>
         <a
           href={WHATSAPP_URL}
@@ -375,9 +378,9 @@ const schema = {
   <section class="py-24 lg:py-32 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeading
-        label="Localizacao"
-        title="Facil de chegar"
-        subtitle={`No coracao de ${config.neighborhood}, com facil acesso por transporte publico.`}
+        label="Localização"
+        title="Fácil de chegar"
+        subtitle={`No coração de ${config.neighborhood}, com fácil acesso por transporte público.`}
       />
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
@@ -391,7 +394,7 @@ const schema = {
                 </svg>
               </div>
               <div>
-                <h3 class="font-bold text-warm-800 mb-1">Endereco</h3>
+                <h3 class="font-bold text-warm-800 mb-1">Endereço</h3>
                 <p class="text-sm text-warm-400">{ADDRESS}</p>
               </div>
             </div>
@@ -403,7 +406,7 @@ const schema = {
                 </svg>
               </div>
               <div>
-                <h3 class="font-bold text-warm-800 mb-1">Horario</h3>
+                <h3 class="font-bold text-warm-800 mb-1">Horário</h3>
                 <p class="text-sm text-warm-400">Segunda a Sexta: {config.hours.weekdays}</p>
                 <p class="text-sm text-warm-400">Sabado: {config.hours.saturday}</p>
               </div>
@@ -438,7 +441,7 @@ const schema = {
                 allowfullscreen
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                title={`Localizacao ${config.name}`}
+                title={`Localização ${config.name}`}
               ></iframe>
             ) : (
               <div class="w-full h-full bg-warm-50 flex items-center justify-center">

@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
 
 export default defineConfig({
+  site: 'https://biodonth.com.br',
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()]

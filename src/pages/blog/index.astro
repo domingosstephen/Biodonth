@@ -5,28 +5,28 @@ import { WHATSAPP_URL, INSTAGRAM } from '../../data/services';
 import { config } from '../../data/clinic-config';
 
 const posts = [
-  { slug: 'lentes-de-resina-tudo-que-voce-precisa-saber', title: 'Lentes de Resina: tudo que voce precisa saber antes de fazer', excerpt: 'Descubra como as lentes de resina podem transformar o seu sorriso em uma unica sessao, quanto custam e para quem sao indicadas.', category: 'Estetica Dental', readTime: '5 min' },
-  { slug: 'quando-procurar-ortodontista', title: 'Quando procurar um ortodontista? 7 sinais de que voce precisa', excerpt: 'Dentes tortos, dores de cabeca e dificuldade para morder podem ser sinais. Saiba quando e hora de agendar.', category: 'Saude Bucal', readTime: '4 min' },
-  { slug: 'implante-dentario-dor-mitos', title: 'Implante dentario doi? Desvendando os mitos', excerpt: 'Um dos maiores medos sobre implantes e a dor. Entenda como funciona e por que e mais tranquilo do que voce imagina.', category: 'Saude Bucal', readTime: '6 min' },
-  { slug: 'importancia-prevencao-odontologica', title: 'A importancia da prevencao odontologica em todas as idades', excerpt: 'Prevenir e sempre melhor que remediar. Descubra como programas preventivos podem transformar sua saude bucal.', category: 'Saude Bucal', readTime: '4 min' },
-  { slug: 'cuidados-apos-limpeza-dental', title: '5 cuidados essenciais apos a limpeza dental', excerpt: 'Fez uma limpeza profissional? Veja o que fazer nas proximas horas e como manter os resultados.', category: 'Dicas e Cuidados', readTime: '3 min' },
-  { slug: 'diferenca-lentes-resina-porcelana', title: 'Lentes de resina vs. porcelana: qual a melhor?', excerpt: 'Entenda as diferencas de durabilidade, preco e resultado para tomar a melhor decisao.', category: 'Estetica Dental', readTime: '5 min' },
+  { slug: 'lentes-de-resina-tudo-que-voce-precisa-saber', title: 'Lentes de Resina: tudo que você precisa saber antes de fazer', excerpt: 'Descubra como as lentes de resina podem transformar o seu sorriso em uma única sessão, quanto custam e para quem são indicadas.', category: 'Estética Dental', readTime: '5 min' },
+  { slug: 'quando-procurar-ortodontista', title: 'Quando procurar um ortodontista? 7 sinais de que você precisa', excerpt: 'Dentes tortos, dores de cabeça e dificuldade para morder podem ser sinais. Saiba quando é hora de agendar.', category: 'Saúde Bucal', readTime: '4 min' },
+  { slug: 'implante-dentario-dor-mitos', title: 'Implante dentário dói? Desvendando os mitos', excerpt: 'Um dos maiores medos sobre implantes é a dor. Entenda como funciona e por que é mais tranquilo do que você imagina.', category: 'Saúde Bucal', readTime: '6 min' },
+  { slug: 'importancia-prevencao-odontologica', title: 'A importância da prevenção odontológica em todas as idades', excerpt: 'Prevenir é sempre melhor que remediar. Descubra como programas preventivos podem transformar sua saúde bucal.', category: 'Saúde Bucal', readTime: '4 min' },
+  { slug: 'cuidados-apos-limpeza-dental', title: '5 cuidados essenciais após a limpeza dental', excerpt: 'Fez uma limpeza profissional? Veja o que fazer nas próximas horas e como manter os resultados.', category: 'Dicas e Cuidados', readTime: '3 min' },
+  { slug: 'diferenca-lentes-resina-porcelana', title: 'Lentes de resina vs. porcelana: qual a melhor?', excerpt: 'Entenda as diferenças de durabilidade, preço e resultado para tomar a melhor decisão.', category: 'Estética Dental', readTime: '5 min' },
 ];
 const categories = [...new Set(posts.map((p) => p.category))];
 
 const doctorRef = 'Converse com a equipe Biodonth pelo WhatsApp.';
 ---
 
-<Layout title={`Blog — Dicas de Saude Bucal e Estetica Dental`} description={`Artigos sobre saude bucal, estetica dental e dicas de cuidados. Conteudo da ${config.name} em ${config.neighborhood}.`}>
+<Layout title={`Blog — Dicas de Saúde Bucal e Estética Dental`} description={`Artigos sobre saúde bucal, estética dental e dicas de cuidados. Conteúdo da ${config.name} em ${config.neighborhood}.`}>
 
   <section class="bg-warm-900 py-16 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <Breadcrumb items={[{ label: 'Inicio', href: '/' }, { label: 'Blog' }]} />
+      <Breadcrumb items={[{ label: 'Início', href: '/' }, { label: 'Blog' }]} />
       <div class="max-w-3xl animate-on-scroll">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
           Blog <span class="bg-gradient-to-r from-gold-300 to-gold-500 bg-clip-text text-transparent">{config.shortName}</span>
         </h1>
-        <p class="mt-6 text-lg text-white/50 leading-relaxed">Conteudo confiavel sobre saude bucal, estetica dental e dicas praticas.</p>
+        <p class="mt-6 text-lg text-white/50 leading-relaxed">Conteúdo confiável sobre saúde bucal, estética dental e dicas práticas.</p>
       </div>
     </div>
   </section>
@@ -78,7 +78,7 @@ const doctorRef = 'Converse com a equipe Biodonth pelo WhatsApp.';
 
   <section class="py-16 lg:py-20 bg-gold-50 border-y border-gold-100">
     <div class="max-w-3xl mx-auto px-4 text-center animate-on-scroll">
-      <h2 class="text-2xl sm:text-3xl font-bold text-warm-900 mb-4">Duvida sobre saude bucal?</h2>
+      <h2 class="text-2xl sm:text-3xl font-bold text-warm-900 mb-4">Dúvida sobre saúde bucal?</h2>
       <p class="text-warm-400 mb-8">{doctorRef}</p>
       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-warm-900 text-white font-bold px-8 py-4 rounded-full hover:bg-warm-800 transition-all btn-press">
         Falar com a Biodonth

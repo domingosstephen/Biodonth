@@ -46,8 +46,8 @@ const doctorRef = config.doctor ? ` com ${config.doctor.name}` : '';
   <section class="bg-warm-900 py-16 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Breadcrumb items={[
-        { label: 'Inicio', href: '/' },
-        { label: 'Servicos', href: '/servicos' },
+        { label: 'Início', href: '/' },
+        { label: 'Serviços', href: '/servicos' },
         { label: service.shortTitle },
       ]} />
       <div class="max-w-3xl">
@@ -77,7 +77,7 @@ const doctorRef = config.doctor ? ` com ${config.doctor.name}` : '';
         <div>
           <span class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.25em] text-gold-600 mb-4">
             <span class="w-8 h-[1px] bg-gold-400"></span>
-            Beneficios
+            Benefícios
           </span>
           <h2 class="text-3xl sm:text-4xl font-bold text-warm-900 leading-[1.1] mb-8">
             Por que escolher<br />este tratamento?
@@ -114,7 +114,7 @@ const doctorRef = config.doctor ? ` com ${config.doctor.name}` : '';
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-14 animate-on-scroll">
         <span class="inline-block text-[11px] font-bold uppercase tracking-[0.25em] text-gold-500 mb-3">Perguntas Frequentes</span>
-        <h2 class="text-3xl sm:text-4xl font-bold text-warm-900">Duvidas sobre {service.shortTitle.toLowerCase()}?</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-warm-900">Dúvidas sobre {service.shortTitle.toLowerCase()}?</h2>
       </div>
       <div class="space-y-4 stagger">
         {service.faq.map((item) => (
@@ -137,8 +137,8 @@ const doctorRef = config.doctor ? ` com ${config.doctor.name}` : '';
     <section class="py-20 lg:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14 animate-on-scroll">
-          <span class="inline-block text-[11px] font-bold uppercase tracking-[0.25em] text-gold-500 mb-3">Servicos Relacionados</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-warm-900">Voce tambem pode se interessar</h2>
+          <span class="inline-block text-[11px] font-bold uppercase tracking-[0.25em] text-gold-500 mb-3">Serviços Relacionados</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-warm-900">Você também pode se interessar</h2>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 stagger">
           {relatedServices.map((rel) => (
@@ -162,7 +162,7 @@ const doctorRef = config.doctor ? ` com ${config.doctor.name}` : '';
   <section class="py-16 lg:py-20 bg-warm-900">
     <div class="max-w-3xl mx-auto px-4 text-center animate-on-scroll">
       <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Agende sua consulta de {service.shortTitle.toLowerCase()}</h2>
-      <p class="text-white/40 mb-8">Atendimento particular{doctorRef}. Resposta pelo WhatsApp em ate 30 min.</p>
+      <p class="text-white/40 mb-8">Atendimento particular{doctorRef}. Resposta pelo WhatsApp em até 30 min.</p>
       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-warm-900 font-bold px-8 py-4 rounded-full hover:bg-gold-50 transition-all btn-press">
         Agendar Agora
       </a>
