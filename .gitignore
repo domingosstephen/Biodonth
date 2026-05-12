@@ -2,3 +2,5 @@ node_modules/
 dist/
 .astro/
 .vscode/
+.next/
+next-env.d.ts

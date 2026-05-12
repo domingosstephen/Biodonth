@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand */
+  --color-bronze: #A8824D;
+  --color-bronze-light: #C9A372;
+  --color-bronze-dark: #8B6A3E;
+
+  --color-charcoal: #2A2B2D;
+  --color-shadow: #1A1B1D;
+  --color-marmorino: #8E8F91;
+  --color-marmorino-light: #B8B9BB;
+
+  --color-concrete: #F5F3EF;
+  --color-concrete-warm: #EDE9E1;
+  --color-pure: #FFFFFF;
+
+  /* Typography */
+  --font-display: var(--font-instrument);
+  --font-body: var(--font-inter);
+
+  /* Container widths */
+  --container-narrow: 65ch;
+  --container-default: 1200px;
+  --container-wide: 1440px;
+
+  /* Premium easing */
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Signature tracking values */
+  --tracking-frame: 0.4em;
+  --tracking-eyebrow: 0.18em;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    color: var(--color-charcoal);
+    background: var(--color-concrete);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--color-charcoal);
+  }
+  ::selection {
+    background: var(--color-bronze);
+    color: var(--color-pure);
+  }
+}
+
+@keyframes bobX {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(calc(-50% + 4px), 0); }
+}
+
+@keyframes pulseRing {
+  0%   { transform: scale(1);    opacity: 0.6; }
+  70%  { transform: scale(1.4);  opacity: 0;   }
+  100% { transform: scale(1.4);  opacity: 0;   }
+}
+
+/* Scroll-margin for anchor navigation past the fixed nav */
+[id="hero"],
+[id="tratamentos"],
+[id="conheca-a-clinica"],
+[id="resultados"],
+[id="depoimentos"],
+[id="duvidas"],
+[id="localizacao"] {
+  scroll-margin-top: 96px;
+}
+
+/* Global reduced-motion safety net */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
