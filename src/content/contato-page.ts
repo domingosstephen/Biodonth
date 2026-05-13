@@ -4,7 +4,7 @@ export const CONTATO_PAGE = {
   metadata: {
     title: 'Contato | Biodonth Odontologia Integrada',
     description:
-      'Fale com a Biodonth pelo WhatsApp, telefone ou formul\u00e1rio. Em Arthur Alvim, S\u00e3o Paulo. Atendimento Seg-Sex 08h-17h, S\u00e1bado 09h-14h.',
+      'Fale com a Biodonth pelo WhatsApp, telefone ou formul\u00e1rio. Em Artur Alvim, S\u00e3o Paulo. Atendimento Seg-Sex 08h-17h, S\u00e1bado 09h-14h.',
   },
 
   hero: {
@@ -100,7 +100,7 @@ export const CONTATO_PAGE = {
     bronze: 'A poucos minutos',
     bronzeItalic: 'de onde voc\u00ea est\u00e1.',
     description:
-      'Em Arthur Alvim, zona leste de S\u00e3o Paulo. Atendemos com hora marcada \u2014 basta avisar que voc\u00ea est\u00e1 vindo.',
+      'Em Artur Alvim, zona leste de S\u00e3o Paulo. Atendemos com hora marcada \u2014 basta avisar que voc\u00ea est\u00e1 vindo.',
     primaryCtaLabel: 'Como chegar',
     secondaryCtaLabel: 'Conhecer a cl\u00ednica',
     secondaryCtaHref: '/sobre',

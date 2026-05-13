@@ -4,7 +4,7 @@ export const TRATAMENTOS_PAGE = {
   metadata: {
     title: 'Tratamentos | Biodonth Odontologia Integrada',
     description:
-      'Conheça todos os tratamentos da Biodonth: implantes, ortodontia, facetas, clareamento, harmonização orofacial e reabilitação completa em Arthur Alvim, São Paulo.',
+      'Conheça todos os tratamentos da Biodonth: implantes, ortodontia, facetas, clareamento, harmonização orofacial e reabilitação completa em Artur Alvim, São Paulo.',
   },
 
   hero: {

@@ -13,12 +13,12 @@ export const CONTACT = {
   email: 'contato@biodonth.com.br', // TODO: confirm — not visible on current site
   address: {
     street: 'Rua Desembargador Rocha Portela, 1012',
-    neighborhood: 'Arthur Alvim',
+    neighborhood: 'Artur Alvim',
     city: 'São Paulo',
     state: 'SP',
     cep: '03567-000',
-    full: 'Rua Desembargador Rocha Portela, 1012 — Arthur Alvim, São Paulo — SP, CEP 03567-000',
-    short: 'Rua Desembargador Rocha Portela, 1012 — Arthur Alvim, SP',
+    full: 'Rua Desembargador Rocha Portela, 1012 — Artur Alvim, São Paulo — SP, CEP 03567-000',
+    short: 'Rua Desembargador Rocha Portela, 1012 — Artur Alvim, SP',
   },
   hours: {
     weekdays: 'Seg–Sex, 08h às 17h',

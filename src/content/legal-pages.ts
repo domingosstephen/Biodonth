@@ -57,7 +57,7 @@ export const PRIVACIDADE: LegalPage = {
       title: '1. Quem somos',
       body: [
         // [CONFIRM-BIODONTH] CNPJ and full company name need confirmation.
-        'A Biodonth Odontologia Integrada \u00e9 uma cl\u00ednica odontol\u00f3gica localizada na Rua Desembargador Rocha Portela, 1012, Arthur Alvim, S\u00e3o Paulo \u2014 SP, CEP 03567-000. Atuamos como controladora dos seus dados pessoais para os fins descritos nesta pol\u00edtica, nos termos da Lei Geral de Prote\u00e7\u00e3o de Dados (LGPD \u2014 Lei n\u00ba 13.709/2018).',
+        'A Biodonth Odontologia Integrada \u00e9 uma cl\u00ednica odontol\u00f3gica localizada na Rua Desembargador Rocha Portela, 1012, Artur Alvim, S\u00e3o Paulo \u2014 SP, CEP 03567-000. Atuamos como controladora dos seus dados pessoais para os fins descritos nesta pol\u00edtica, nos termos da Lei Geral de Prote\u00e7\u00e3o de Dados (LGPD \u2014 Lei n\u00ba 13.709/2018).',
         'Se voc\u00ea tiver qualquer d\u00favida sobre esta pol\u00edtica, sobre o uso dos seus dados, ou quiser exercer os seus direitos como titular, entre em contato pelo e-mail contato@biodonth.com.br ou pelo WhatsApp (11) 9.5003-1000.',
       ],
     },
@@ -213,7 +213,7 @@ export const TERMOS: LegalPage = {
       id: 'objeto',
       title: '2. Sobre o site',
       body: [
-        'O site biodonth.com.br \u00e9 mantido pela Biodonth Odontologia Integrada, com sede em Arthur Alvim, S\u00e3o Paulo \u2014 SP. Ele tem car\u00e1ter institucional e informativo: apresenta nossa cl\u00ednica, equipe, tratamentos, conte\u00fados educacionais sobre sa\u00fade bucal e canais de contato.',
+        'O site biodonth.com.br \u00e9 mantido pela Biodonth Odontologia Integrada, com sede em Artur Alvim, S\u00e3o Paulo \u2014 SP. Ele tem car\u00e1ter institucional e informativo: apresenta nossa cl\u00ednica, equipe, tratamentos, conte\u00fados educacionais sobre sa\u00fade bucal e canais de contato.',
         'O site n\u00e3o realiza atendimento cl\u00ednico, n\u00e3o emite diagn\u00f3sticos e n\u00e3o substitui consulta presencial com profissional habilitado.',
       ],
     },

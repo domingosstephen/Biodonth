@@ -107,7 +107,7 @@ export const ESPECIALISTAS_PAGE = {
   metadata: {
     title: 'Especialistas | Biodonth Odontologia Integrada',
     description:
-      'Conhe\u00e7a a equipe da Biodonth \u2014 seis especialistas que trabalham juntos em cada caso. Em Arthur Alvim, S\u00e3o Paulo, com consulta sem pressa como ponto de partida.',
+      'Conhe\u00e7a a equipe da Biodonth \u2014 seis especialistas que trabalham juntos em cada caso. Em Artur Alvim, S\u00e3o Paulo, com consulta sem pressa como ponto de partida.',
   },
 
   hero: {

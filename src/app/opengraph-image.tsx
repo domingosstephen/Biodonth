@@ -66,7 +66,7 @@ export default async function Image() {
             fontFamily: 'system-ui, sans-serif',
             color: '#8E8F91',
           }}>
-            Arthur Alvim, S\u00e3o Paulo — Desde 2015
+            Artur Alvim, S\u00e3o Paulo — Desde 2015
           </div>
           <div style={{
             fontSize: '24px',

@@ -2,7 +2,7 @@
 
 ## Identity
 - Client: Biodonth Odontologia Integrada
-- Location: Arthur Alvim, São Paulo, Brazil
+- Location: Artur Alvim, São Paulo, Brazil
 - Sector: Premium integrated dentistry
 - Audience: Adult Brazilian patients (PT-BR) seeking modern, high-quality dental care
 - Positioning: Luxury wellness, NOT clinical. Closer to a high-end skincare clinic or Italian spa than a typical dental practice.

@@ -5,7 +5,7 @@
 // CLAIMS TAGGED [CONFIRM-BIODONTH] need verification with Biodonth's operating reality.
 
 export const HOME_HERO = {
-  eyebrow: 'Odontologia integrada \u2022 Arthur Alvim',
+  eyebrow: 'Odontologia integrada \u2022 Artur Alvim',
   bronze: 'Volte a sorrir',
   bronzeItalic: 'sem pensar duas vezes.',
   subhead:
@@ -90,7 +90,7 @@ export const HOME_LOCATION = {
   bronzeItalic: 'sem fila no balc\u00e3o.',
   // [CONFIRM-BIODONTH: distance to Estação Artur Alvim, parking availability. Edit if inaccurate.]
   description:
-    'Em Arthur Alvim, zona leste de S\u00e3o Paulo, a poucos minutos do metr\u00f4. Marque um hor\u00e1rio que cabe na sua vida \u2014 n\u00e3o no hor\u00e1rio de uma fila \u2014 e seja recebido na hora que combinamos.',
+    'Em Artur Alvim, zona leste de S\u00e3o Paulo, a poucos minutos do metr\u00f4. Marque um hor\u00e1rio que cabe na sua vida \u2014 n\u00e3o no hor\u00e1rio de uma fila \u2014 e seja recebido na hora que combinamos.',
   labels: {
     address: 'Endere\u00e7o',
     hours: 'Atendimento',
@@ -100,12 +100,12 @@ export const HOME_LOCATION = {
     whatsappPrefix: 'WhatsApp',
     phonePrefix: 'Telefone',
   },
-  mapQuery: 'Rua Desembargador Rocha Portela, 1012, Arthur Alvim, S\u00e3o Paulo, SP',
+  mapQuery: 'Rua Desembargador Rocha Portela, 1012, Artur Alvim, S\u00e3o Paulo, SP',
 } as const;
 
 export const FOOTER = {
   brand: {
-    tagline: 'Odontologia integrada em Arthur Alvim, S\u00e3o Paulo.',
+    tagline: 'Odontologia integrada em Artur Alvim, S\u00e3o Paulo.',
     statement:
       'Desde 2015, recebendo quem decidiu cuidar do sorriso com calma. Poucos pacientes por dia. Planos completos. Equipe inteira pensando o seu caso.',
   },

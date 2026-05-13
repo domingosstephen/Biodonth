@@ -7,9 +7,9 @@ import './globals.css';
 
 const SITE_URL = 'https://biodonth.com.br';
 const SITE_NAME = 'Biodonth Odontologia Integrada';
-const SITE_TAGLINE = 'Odontologia integrada em Arthur Alvim, São Paulo';
+const SITE_TAGLINE = 'Odontologia integrada em Artur Alvim, São Paulo';
 const SITE_DESCRIPTION =
-  'Clínica de odontologia integrada em Arthur Alvim, São Paulo. Primeira consulta sem pressa, plano de tratamento na mão, equipe inteira pensando o seu caso. Sem fila de convênio. Desde 2015.';
+  'Clínica de odontologia integrada em Artur Alvim, São Paulo. Primeira consulta sem pressa, plano de tratamento na mão, equipe inteira pensando o seu caso. Sem fila de convênio. Desde 2015.';
 
 const instrumentSerif = Instrument_Serif({
   variable: '--font-instrument',

@@ -60,7 +60,7 @@ export const PREVENCAO_CONTENT: Record<string, PrevencaoContent> = {
   'checkup-digital': {
     metadata: {
       title: 'Check-up preventivo digital',
-      description: 'Check-up odontológico digital em Arthur Alvim — exame com imagens intra-orais ampliadas em até 60× para detectar problemas em estágios iniciais. Sem dor, sem stress.',
+      description: 'Check-up odontológico digital em Artur Alvim — exame com imagens intra-orais ampliadas em até 60× para detectar problemas em estágios iniciais. Sem dor, sem stress.',
     },
     hero: {
       eyebrow: 'Prevenção • Check-up digital',
@@ -188,7 +188,7 @@ export const PREVENCAO_CONTENT: Record<string, PrevencaoContent> = {
   'kids': {
     metadata: {
       title: 'Odontopediatria preventiva (Kids)',
-      description: 'Programa preventivo odontológico para crianças em Arthur Alvim — primeira ida ao dentista sem trauma, com profissionais especializados em odontopediatria.',
+      description: 'Programa preventivo odontológico para crianças em Artur Alvim — primeira ida ao dentista sem trauma, com profissionais especializados em odontopediatria.',
     },
     hero: {
       eyebrow: 'Prevenção • Kids',
@@ -312,7 +312,7 @@ export const PREVENCAO_CONTENT: Record<string, PrevencaoContent> = {
   'gestante': {
     metadata: {
       title: 'Odontologia para gestantes',
-      description: 'Acompanhamento odontológico preventivo durante a gestação, com segurança para mãe e bebê. Em Arthur Alvim, com primeira consulta de 60 minutos.',
+      description: 'Acompanhamento odontológico preventivo durante a gestação, com segurança para mãe e bebê. Em Artur Alvim, com primeira consulta de 60 minutos.',
     },
     hero: {
       eyebrow: 'Prevenção • Gestante',
@@ -441,7 +441,7 @@ export const PREVENCAO_CONTENT: Record<string, PrevencaoContent> = {
   'atleta': {
     metadata: {
       title: 'Odontologia para atletas',
-      description: 'Programa preventivo odontológico para atletas em Arthur Alvim — protetor bucal personalizado, prevenção de trauma, e o impacto da saúde bucal na performance.',
+      description: 'Programa preventivo odontológico para atletas em Artur Alvim — protetor bucal personalizado, prevenção de trauma, e o impacto da saúde bucal na performance.',
     },
     hero: {
       eyebrow: 'Prevenção • Atleta',
@@ -570,7 +570,7 @@ export const PREVENCAO_CONTENT: Record<string, PrevencaoContent> = {
   'empresa': {
     metadata: {
       title: 'Programa odontológico para empresas',
-      description: 'Programa preventivo odontológico corporativo em Arthur Alvim — check-ups regulares para colaboradores, com a qualidade da odontologia particular.',
+      description: 'Programa preventivo odontológico corporativo em Artur Alvim — check-ups regulares para colaboradores, com a qualidade da odontologia particular.',
     },
     hero: {
       eyebrow: 'Prevenção • Empresa',
@@ -682,8 +682,8 @@ export const PREVENCAO_CONTENT: Record<string, PrevencaoContent> = {
         answer: 'Pode entrar, sim, conforme política definida no contrato. Algumas empresas optam por incluir cônjuges e filhos como benefício adicional; outras restringem ao colaborador titular. Tudo configurável.',
       },
       {
-        question: 'Atendem só na clínica em Arthur Alvim?',
-        answer: 'Sim, todos os atendimentos clínicos acontecem na clínica em Arthur Alvim. Para empresas localizadas em outras regiões de São Paulo, isso pode ser fator limitante — vale conversar caso a caso. Ações educativas e palestras podem ser realizadas na empresa.',
+        question: 'Atendem só na clínica em Artur Alvim?',
+        answer: 'Sim, todos os atendimentos clínicos acontecem na clínica em Artur Alvim. Para empresas localizadas em outras regiões de São Paulo, isso pode ser fator limitante — vale conversar caso a caso. Ações educativas e palestras podem ser realizadas na empresa.',
       },
     ],
     closing: {
@@ -698,7 +698,7 @@ export const PREVENCAO_CONTENT: Record<string, PrevencaoContent> = {
   'melhor-idade': {
     metadata: {
       title: 'Odontologia para melhor idade (60+)',
-      description: 'Programa odontológico preventivo para pacientes 60+ em Arthur Alvim, com atenção a próteses, gengiva sensível e medicações concomitantes.',
+      description: 'Programa odontológico preventivo para pacientes 60+ em Artur Alvim, com atenção a próteses, gengiva sensível e medicações concomitantes.',
     },
     hero: {
       eyebrow: 'Prevenção • Melhor idade',

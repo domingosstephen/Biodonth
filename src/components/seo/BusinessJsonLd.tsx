@@ -35,7 +35,7 @@ export function BusinessJsonLd() {
         name: 'Biodonth Odontologia Integrada',
         alternateName: 'Biodonth',
         description:
-          'Cl\u00ednica de odontologia integrada em Arthur Alvim, S\u00e3o Paulo. Primeira consulta sem pressa, plano de tratamento escrito na m\u00e3o, equipe inteira pensando o seu caso. Desde 2015.',
+          'Cl\u00ednica de odontologia integrada em Artur Alvim, S\u00e3o Paulo. Primeira consulta sem pressa, plano de tratamento escrito na m\u00e3o, equipe inteira pensando o seu caso. Desde 2015.',
         url: SITE_URL,
         telephone: `+${CONTACT.phone.raw}`,
         email: CONTACT.email,

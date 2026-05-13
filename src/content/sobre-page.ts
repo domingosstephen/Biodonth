@@ -5,9 +5,9 @@
 
 export const SOBRE_PAGE = {
   metadata: {
-    title: 'Sobre a Biodonth | Odontologia Integrada em Arthur Alvim',
+    title: 'Sobre a Biodonth | Odontologia Integrada em Artur Alvim',
     description:
-      'Desde 2015, a Biodonth recebe quem decidiu cuidar do sorriso com calma, sem fila de conv\u00eanio. A cl\u00ednica de odontologia integrada em Arthur Alvim, S\u00e3o Paulo, onde a primeira consulta n\u00e3o tem pressa.',
+      'Desde 2015, a Biodonth recebe quem decidiu cuidar do sorriso com calma, sem fila de conv\u00eanio. A cl\u00ednica de odontologia integrada em Artur Alvim, S\u00e3o Paulo, onde a primeira consulta n\u00e3o tem pressa.',
   },
 
   hero: {
@@ -23,7 +23,7 @@ export const SOBRE_PAGE = {
     title: 'Desde 2015, mesma decis\u00e3o.',
     paragraphs: [
       // [CONFIRM-BIODONTH: founding details (equipe pequena, poucas cadeiras) are illustrative — replace with real founding story if available.]
-      'Em 2015, em Arthur Alvim, com uma equipe pequena e poucas cadeiras, fizemos uma conta simples: ou atend\u00edamos 30 pessoas por dia sem tempo para nenhuma, ou atend\u00edamos 10 com tempo para todas. Escolhemos a segunda, e foi do que dependeu tudo o que veio depois.',
+      'Em 2015, em Artur Alvim, com uma equipe pequena e poucas cadeiras, fizemos uma conta simples: ou atend\u00edamos 30 pessoas por dia sem tempo para nenhuma, ou atend\u00edamos 10 com tempo para todas. Escolhemos a segunda, e foi do que dependeu tudo o que veio depois.',
       'Naquele primeiro ano, tamb\u00e9m decidimos n\u00e3o trabalhar com conv\u00eanio. N\u00e3o foi preconceito \u2014 o conv\u00eanio funciona, e funciona para muita gente. Mas o modelo imp\u00f5e um ritmo (10 minutos por paciente, materiais decididos pela operadora, escala antes da pessoa) que n\u00e3o se encaixa em quem quer um tratamento bem feito do come\u00e7o ao fim.',
       'Hoje, mais de uma d\u00e9cada depois, a estrutura \u00e9 diferente \u2014 mais especialidades, mais tecnologia, mais profissionais. Mas a regra do primeiro dia se manteve: poucos pacientes por dia, planos completos, e tempo de sobra para a conversa que vem antes da cadeira.',
     ],

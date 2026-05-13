@@ -181,7 +181,7 @@ export function LocationSection() {
           >
             <Map
               query={HOME_LOCATION.mapQuery}
-              title="Mapa com a localização da Biodonth em Arthur Alvim"
+              title="Mapa com a localização da Biodonth em Artur Alvim"
             />
           </motion.div>
         </div>

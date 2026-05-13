@@ -48,7 +48,7 @@ export function ContatoClosing() {
           >
             <Map
               query={HOME_LOCATION.mapQuery}
-              title="Mapa com a localiza\u00e7\u00e3o da Biodonth em Arthur Alvim"
+              title="Mapa com a localiza\u00e7\u00e3o da Biodonth em Artur Alvim"
               aspectClassName="aspect-[4/5] lg:aspect-auto lg:h-full lg:min-h-[480px]"
             />
           </motion.div>

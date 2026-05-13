@@ -94,7 +94,7 @@ export const PREVENCAO_PAGE = {
   metadata: {
     title: 'Prevenção',
     description:
-      'Programas de prevenção odontológica da Biodonth, segmentados por audiência: check-up digital, kids, gestante, atleta, empresa e melhor idade. Em Arthur Alvim, São Paulo.',
+      'Programas de prevenção odontológica da Biodonth, segmentados por audiência: check-up digital, kids, gestante, atleta, empresa e melhor idade. Em Artur Alvim, São Paulo.',
   },
 
   hero: {
