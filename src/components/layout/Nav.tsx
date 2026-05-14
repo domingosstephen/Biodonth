@@ -67,7 +67,7 @@ export function Nav() {
           href="/"
           className="text-bronze transition-colors duration-500 ease-[var(--ease-premium)] focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2"
         >
-          <LogoFull className="h-9 md:h-11 w-auto" />
+          <LogoFull className="h-14 md:h-[4.25rem] w-auto" />
         </Link>
 
         {/* Desktop nav */}

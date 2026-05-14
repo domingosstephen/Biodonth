@@ -7,22 +7,27 @@ import { Container } from '@/components/ui/Container';
 import { DisplayHeadline } from '@/components/ui/DisplayHeadline';
 import { Stars } from '@/components/ui/Stars';
 import { TestimonialCard } from '@/components/ui/TestimonialCard';
-import { TESTIMONIALS, GBP_SUMMARY } from '@/content/testimonials';
+import type { Testimonial } from '@/content/testimonials';
 import { HOME_TESTIMONIALS } from '@/content/home';
 
 import { FADE_UP, TRANSITION_DEFAULT, TRANSITION_QUICK, EASE_PREMIUM } from '@/lib/motion';
 
 const AUTO_ADVANCE_MS = 8000;
 
-export function Testimonials() {
+type TestimonialsProps = {
+  testimonials: Testimonial[];
+  summary: { averageRating: number; totalReviews: number; profileUrl: string };
+};
+
+export function Testimonials({ testimonials, summary }: TestimonialsProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
   const pointerStartX = useRef<number | null>(null);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const total = TESTIMONIALS.length;
-  const active = TESTIMONIALS[activeIndex];
+  const total = testimonials.length;
+  const active = testimonials[activeIndex];
 
   const goTo = useCallback((index: number) => {
     setActiveIndex(((index % total) + total) % total);
@@ -128,17 +133,17 @@ export function Testimonials() {
           className="max-w-2xl mx-auto mb-12 md:mb-16 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-center sm:text-left"
         >
           <div className="flex items-center gap-3">
-            <Stars rating={GBP_SUMMARY.averageRating} size={20} label={`${GBP_SUMMARY.averageRating} de 5 estrelas`} />
+            <Stars rating={summary.averageRating} size={20} label={`${summary.averageRating} de 5 estrelas`} />
             <span className="font-display text-[clamp(24px,3vw,32px)] text-charcoal leading-none">
-              {GBP_SUMMARY.averageRating.toFixed(1)}
+              {summary.averageRating.toFixed(1)}
             </span>
           </div>
           <span aria-hidden="true" className="hidden sm:inline-block w-px h-6 bg-marmorino-light" />
           <p className="font-body text-[14px] text-marmorino">
-            {HOME_TESTIMONIALS.ratingCountLabel(GBP_SUMMARY.totalReviews)}
+            {HOME_TESTIMONIALS.ratingCountLabel(summary.totalReviews)}
           </p>
           <a
-            href={GBP_SUMMARY.profileUrl}
+            href={summary.profileUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-1.5 font-body text-[14px] font-medium text-bronze hover:text-bronze-dark transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-4"
@@ -205,7 +210,7 @@ export function Testimonials() {
 
           {/* Dots */}
           <div role="tablist" aria-label="Selecionar depoimento" className="mt-8 md:mt-10 flex items-center justify-center gap-2.5">
-            {TESTIMONIALS.map((t, i) => {
+            {testimonials.map((t, i) => {
               const isActive = i === activeIndex;
               return (
                 <button

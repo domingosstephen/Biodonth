@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { BadgeCheck } from 'lucide-react';
 import { Stars } from '@/components/ui/Stars';
 import type { Testimonial } from '@/content/testimonials';
@@ -29,9 +30,19 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-6 mt-8 md:mt-10 pt-6 md:pt-8 border-t border-marmorino-light/30">
         {/* Author */}
         <div className="flex items-center gap-4">
-          <div className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-bronze text-concrete flex items-center justify-center font-body font-medium text-[14px] md:text-[15px] tracking-tight shrink-0">
-            {testimonial.initials}
-          </div>
+          {testimonial.photoSrc ? (
+            <Image
+              src={testimonial.photoSrc}
+              alt={testimonial.authorName}
+              width={48}
+              height={48}
+              className="w-11 h-11 md:w-12 md:h-12 rounded-full object-cover shrink-0"
+            />
+          ) : (
+            <div className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-bronze text-concrete flex items-center justify-center font-body font-medium text-[14px] md:text-[15px] tracking-tight shrink-0">
+              {testimonial.initials}
+            </div>
+          )}
           <div className="flex flex-col gap-0.5">
             <span className="font-body font-medium text-[15px] text-charcoal">
               {testimonial.authorName}
