@@ -18,12 +18,15 @@ export function DisplayHeadline({ bronze, bronzeItalic, subhead, align = 'center
     <div className={cn(centered && 'text-center', className)}>
       <Heading level={headingLevel} tone="bronze">
         {reveal ? <RevealText>{bronze}</RevealText> : bronze}
+        {bronzeItalic && (
+          <>
+            <br />
+            <span className="italic">
+              {reveal ? <RevealText delay={0.15}>{bronzeItalic}</RevealText> : bronzeItalic}
+            </span>
+          </>
+        )}
       </Heading>
-      {bronzeItalic && (
-        <Heading level={headingLevel} tone="bronze" italic>
-          {reveal ? <RevealText delay={0.15}>{bronzeItalic}</RevealText> : bronzeItalic}
-        </Heading>
-      )}
       {subhead && (
         <p className={cn(
           'font-body font-normal text-[clamp(18px,2.2vw,26px)] text-marmorino leading-[1.4] mt-4 max-w-[60ch]',
