@@ -64,6 +64,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${instrumentSerif.variable} ${inter.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+      </head>
       <body>
         <Nav />
         <main id="main-content">{children}</main>

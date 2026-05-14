@@ -96,6 +96,7 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
             bronze={HOME_TESTIMONIALS.bronze}
             bronzeItalic={HOME_TESTIMONIALS.bronzeItalic}
             align="center"
+            headingLevel="h2"
           />
           <p className="mt-6 font-body text-marmorino leading-relaxed text-[clamp(16px,1.6vw,19px)] max-w-2xl mx-auto">
             {HOME_TESTIMONIALS.description}
@@ -179,9 +180,10 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
                   aria-selected={isActive}
                   aria-label={`Ir para depoimento ${i + 1} de ${total}`}
                   onClick={() => onDot(i)}
-                  className={`h-2 rounded-full transition-all duration-400 ease-[var(--ease-premium)] focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-4 ${
+                  className={`h-2 py-5 box-content rounded-full transition-all duration-400 ease-[var(--ease-premium)] focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-4 ${
                     isActive ? 'w-8 bg-bronze' : 'w-2 bg-marmorino-light hover:bg-bronze/60'
                   }`}
+                  style={{ backgroundClip: 'content-box' }}
                 />
               );
             })}

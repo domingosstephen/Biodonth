@@ -22,6 +22,7 @@ export function TreatmentsGrid() {
             bronzeItalic={HOME_TREATMENTS.bronzeItalic}
             subhead={HOME_TREATMENTS.description}
             align="center"
+            headingLevel="h2"
           />
         </div>
 

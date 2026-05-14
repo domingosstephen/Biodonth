@@ -24,7 +24,7 @@ export function Faq() {
           <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
             {HOME_FAQ.eyebrow}
           </p>
-          <DisplayHeadline bronze={HOME_FAQ.bronze} bronzeItalic={HOME_FAQ.bronzeItalic} align="center" />
+          <DisplayHeadline bronze={HOME_FAQ.bronze} bronzeItalic={HOME_FAQ.bronzeItalic} align="center" headingLevel="h2" />
           <p className="mt-6 font-body text-marmorino leading-relaxed text-[clamp(16px,1.6vw,19px)] max-w-2xl mx-auto">
             {HOME_FAQ.description}
           </p>

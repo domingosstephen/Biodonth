@@ -9,17 +9,18 @@ interface DisplayHeadlineProps {
   align?: 'left' | 'center';
   reveal?: boolean;
   className?: string;
+  headingLevel?: 'display' | 'h1' | 'h2';
 }
 
-export function DisplayHeadline({ bronze, bronzeItalic, subhead, align = 'center', reveal = false, className }: DisplayHeadlineProps) {
+export function DisplayHeadline({ bronze, bronzeItalic, subhead, align = 'center', reveal = false, className, headingLevel = 'display' }: DisplayHeadlineProps) {
   const centered = align === 'center';
   return (
     <div className={cn(centered && 'text-center', className)}>
-      <Heading level="display" tone="bronze">
+      <Heading level={headingLevel} tone="bronze">
         {reveal ? <RevealText>{bronze}</RevealText> : bronze}
       </Heading>
       {bronzeItalic && (
-        <Heading level="display" tone="bronze" italic>
+        <Heading level={headingLevel} tone="bronze" italic>
           {reveal ? <RevealText delay={0.15}>{bronzeItalic}</RevealText> : bronzeItalic}
         </Heading>
       )}

@@ -23,6 +23,7 @@ export function BeforeAfterShowcase() {
             bronze={HOME_BEFORE_AFTER.bronze}
             bronzeItalic={HOME_BEFORE_AFTER.bronzeItalic}
             align="center"
+            headingLevel="h2"
           />
           <p className="mt-6 font-body text-marmorino leading-relaxed text-[clamp(16px,1.6vw,19px)] max-w-2xl mx-auto">
             {HOME_BEFORE_AFTER.description}

@@ -22,6 +22,7 @@ export function LocationSection() {
               bronze={HOME_LOCATION.bronze}
               bronzeItalic={HOME_LOCATION.bronzeItalic}
               align="left"
+              headingLevel="h2"
             />
             <p className="mt-6 font-body text-marmorino leading-relaxed text-[clamp(16px,1.6vw,19px)] max-w-xl">
               {HOME_LOCATION.description}
@@ -31,19 +32,19 @@ export function LocationSection() {
             <div className="mt-10 mb-10 w-16 h-px bg-bronze" aria-hidden="true" />
 
             {/* Info stack */}
-            <dl className="space-y-7 md:space-y-8">
+            <div className="space-y-7 md:space-y-8">
               {/* Address */}
               <div className="flex items-start gap-4">
                 <span aria-hidden="true" className="shrink-0 mt-1 text-bronze">
                   <MapPin className="w-5 h-5" strokeWidth={1.5} />
                 </span>
                 <div>
-                  <dt className="font-body uppercase text-[11px] tracking-[0.18em] text-marmorino font-medium mb-1.5">
+                  <p className="font-body uppercase text-[11px] tracking-[0.18em] text-marmorino font-medium mb-1.5">
                     {HOME_LOCATION.labels.address}
-                  </dt>
-                  <dd className="font-body text-[16px] md:text-[17px] text-charcoal leading-relaxed">
+                  </p>
+                  <p className="font-body text-[16px] md:text-[17px] text-charcoal leading-relaxed">
                     {CONTACT.address.full}
-                  </dd>
+                  </p>
                 </div>
               </div>
 
@@ -53,13 +54,13 @@ export function LocationSection() {
                   <Clock className="w-5 h-5" strokeWidth={1.5} />
                 </span>
                 <div>
-                  <dt className="font-body uppercase text-[11px] tracking-[0.18em] text-marmorino font-medium mb-1.5">
+                  <p className="font-body uppercase text-[11px] tracking-[0.18em] text-marmorino font-medium mb-1.5">
                     {HOME_LOCATION.labels.hours}
-                  </dt>
-                  <dd className="font-body text-[16px] md:text-[17px] text-charcoal leading-relaxed">
-                    <div>{CONTACT.hours.weekdays}</div>
-                    <div>{CONTACT.hours.saturday}</div>
-                  </dd>
+                  </p>
+                  <p className="font-body text-[16px] md:text-[17px] text-charcoal leading-relaxed">
+                    <span className="block">{CONTACT.hours.weekdays}</span>
+                    <span className="block">{CONTACT.hours.saturday}</span>
+                  </p>
                 </div>
               </div>
 
@@ -69,10 +70,10 @@ export function LocationSection() {
                   <PhoneIcon className="w-5 h-5" strokeWidth={1.5} />
                 </span>
                 <div>
-                  <dt className="font-body uppercase text-[11px] tracking-[0.18em] text-marmorino font-medium mb-1.5">
+                  <p className="font-body uppercase text-[11px] tracking-[0.18em] text-marmorino font-medium mb-1.5">
                     {HOME_LOCATION.labels.contact}
-                  </dt>
-                  <dd className="font-body text-[16px] md:text-[17px] text-charcoal leading-relaxed space-y-1">
+                  </p>
+                  <div className="font-body text-[16px] md:text-[17px] text-charcoal leading-relaxed space-y-1">
                     <div>
                       <span className="text-marmorino text-[14px] mr-2">
                         {HOME_LOCATION.labels.phonePrefix}
@@ -98,10 +99,10 @@ export function LocationSection() {
                         {CONTACT.whatsapp.display}
                       </a>
                     </div>
-                  </dd>
+                  </div>
                 </div>
               </div>
-            </dl>
+            </div>
 
             {/* CTAs */}
             <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
