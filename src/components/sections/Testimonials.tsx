@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { DisplayHeadline } from '@/components/ui/DisplayHeadline';
@@ -9,8 +8,6 @@ import { Stars } from '@/components/ui/Stars';
 import { TestimonialCard } from '@/components/ui/TestimonialCard';
 import type { Testimonial } from '@/content/testimonials';
 import { HOME_TESTIMONIALS } from '@/content/home';
-
-import { FADE_UP, TRANSITION_DEFAULT, TRANSITION_QUICK, EASE_PREMIUM } from '@/lib/motion';
 
 const AUTO_ADVANCE_MS = 8000;
 
@@ -36,7 +33,6 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
   const next = useCallback(() => goTo(activeIndex + 1), [activeIndex, goTo]);
   const prev = useCallback(() => goTo(activeIndex - 1), [activeIndex, goTo]);
 
-  // Detect reduced-motion
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -46,7 +42,6 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
     return () => mq.removeEventListener('change', handler);
   }, []);
 
-  // Auto-advance
   useEffect(() => {
     if (paused || reducedMotion) return;
     intervalRef.current = setInterval(() => {
@@ -75,7 +70,6 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
     else if (e.key === 'ArrowRight') { e.preventDefault(); onNext(); }
   };
 
-  // Swipe
   const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
     pointerStartX.current = e.clientX;
   };
@@ -94,44 +88,22 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
     <section id="depoimentos" className="relative bg-concrete py-20 md:py-28 lg:py-36 overflow-hidden">
       <Container width="wide">
         {/* Header */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ staggerChildren: 0.12 }}
-          className="max-w-3xl mx-auto text-center mb-10 md:mb-14"
-        >
-          <motion.p
-            variants={FADE_UP}
-            transition={TRANSITION_DEFAULT}
-            className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6"
-          >
+        <div className="max-w-3xl mx-auto text-center mb-10 md:mb-14">
+          <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
             {HOME_TESTIMONIALS.eyebrow}
-          </motion.p>
-          <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>
-            <DisplayHeadline
-              bronze={HOME_TESTIMONIALS.bronze}
-              bronzeItalic={HOME_TESTIMONIALS.bronzeItalic}
-              align="center"
-            />
-          </motion.div>
-          <motion.p
-            variants={FADE_UP}
-            transition={TRANSITION_DEFAULT}
-            className="mt-6 font-body text-marmorino leading-relaxed text-[clamp(16px,1.6vw,19px)] max-w-2xl mx-auto"
-          >
+          </p>
+          <DisplayHeadline
+            bronze={HOME_TESTIMONIALS.bronze}
+            bronzeItalic={HOME_TESTIMONIALS.bronzeItalic}
+            align="center"
+          />
+          <p className="mt-6 font-body text-marmorino leading-relaxed text-[clamp(16px,1.6vw,19px)] max-w-2xl mx-auto">
             {HOME_TESTIMONIALS.description}
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
 
         {/* GBP rating banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.7, ease: EASE_PREMIUM }}
-          className="max-w-2xl mx-auto mb-12 md:mb-16 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-center sm:text-left"
-        >
+        <div className="max-w-2xl mx-auto mb-12 md:mb-16 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-center sm:text-left">
           <div className="flex items-center gap-3">
             <Stars rating={summary.averageRating} size={20} label={`${summary.averageRating} de 5 estrelas`} />
             <span className="font-display text-[clamp(24px,3vw,32px)] text-charcoal leading-none">
@@ -154,7 +126,7 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
             </span>
             <ExternalLink className="w-3.5 h-3.5" strokeWidth={1.5} />
           </a>
-        </motion.div>
+        </div>
 
         {/* Carousel */}
         <div
@@ -169,7 +141,6 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
           onKeyDown={onRegionKeyDown}
           className="relative max-w-3xl mx-auto focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-8"
         >
-          {/* Prev / Next (desktop) */}
           <button
             type="button"
             onClick={onPrev}
@@ -187,7 +158,6 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
             <ChevronRight className="w-7 h-7" strokeWidth={1.5} />
           </button>
 
-          {/* Card with swipe */}
           <div
             onPointerDown={onPointerDown}
             onPointerUp={onPointerUp}
@@ -195,20 +165,9 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
             className="touch-pan-y select-none"
             aria-live="polite"
           >
-            <AnimatePresence mode="wait" initial={false}>
-              <motion.div
-                key={active.id}
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -12 }}
-                transition={TRANSITION_QUICK}
-              >
-                <TestimonialCard testimonial={active} />
-              </motion.div>
-            </AnimatePresence>
+            <TestimonialCard testimonial={active} />
           </div>
 
-          {/* Dots */}
           <div role="tablist" aria-label="Selecionar depoimento" className="mt-8 md:mt-10 flex items-center justify-center gap-2.5">
             {testimonials.map((t, i) => {
               const isActive = i === activeIndex;

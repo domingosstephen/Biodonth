@@ -22,6 +22,7 @@ const instrumentSerif = Instrument_Serif({
 
 const inter = Inter({
   variable: '--font-inter',
+  weight: ['400', '500'],
   subsets: ['latin', 'latin-ext'],
   display: 'swap',
   preload: true,

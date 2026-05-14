@@ -1,6 +1,3 @@
-'use client';
-
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
@@ -11,8 +8,6 @@ interface TreatmentCardProps {
 }
 
 export function TreatmentCard({ treatment }: TreatmentCardProps) {
-  const [imgSrc, setImgSrc] = useState<string>(treatment.image.src);
-
   return (
     <Link
       href={`/tratamentos/${treatment.slug}`}
@@ -21,16 +16,11 @@ export function TreatmentCard({ treatment }: TreatmentCardProps) {
       {/* Image */}
       <div className="relative aspect-[4/5] overflow-hidden border-[1.5px] border-bronze bg-concrete-warm">
         <Image
-          src={imgSrc}
+          src={treatment.image.fallback}
           alt={treatment.image.alt}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           className="object-cover transition-transform duration-700 ease-[var(--ease-premium)] group-hover:scale-105"
-          onError={() => {
-            if (imgSrc !== treatment.image.fallback) {
-              setImgSrc(treatment.image.fallback);
-            }
-          }}
         />
       </div>
 

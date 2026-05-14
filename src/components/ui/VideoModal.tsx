@@ -94,7 +94,7 @@ export function VideoModal({ open, onClose, videoSrc, ariaLabel }: VideoModalPro
               controls
               controlsList="nodownload noplaybackrate"
               playsInline
-              preload="auto"
+              preload="none"
               className="w-full h-full object-cover bg-shadow"
               aria-label={ariaLabel}
             />

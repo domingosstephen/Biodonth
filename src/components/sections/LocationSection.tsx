@@ -1,6 +1,3 @@
-'use client';
-
-import { motion } from 'motion/react';
 import { MapPin, Clock, Phone as PhoneIcon, MessageCircle, ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { DisplayHeadline } from '@/components/ui/DisplayHeadline';
@@ -8,8 +5,6 @@ import { Button } from '@/components/ui/Button';
 import { Map } from '@/components/ui/Map';
 import { CONTACT, WHATSAPP_CTA_URL, TEL_URL, buildDirectionsUrl } from '@/content/contact';
 import { HOME_LOCATION } from '@/content/home';
-
-import { FADE_UP, TRANSITION_DEFAULT, EASE_PREMIUM } from '@/lib/motion';
 
 export function LocationSection() {
   const directionsUrl = buildDirectionsUrl(HOME_LOCATION.mapQuery);
@@ -19,51 +14,24 @@ export function LocationSection() {
       <Container width="wide">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-20 items-stretch">
           {/* LEFT — info */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ staggerChildren: 0.12 }}
-            className="lg:col-span-5"
-          >
-            <motion.p
-              variants={FADE_UP}
-              transition={TRANSITION_DEFAULT}
-              className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6"
-            >
+          <div className="lg:col-span-5">
+            <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
               {HOME_LOCATION.eyebrow}
-            </motion.p>
-
-            <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>
-              <DisplayHeadline
-                bronze={HOME_LOCATION.bronze}
-                bronzeItalic={HOME_LOCATION.bronzeItalic}
-                align="left"
-              />
-            </motion.div>
-
-            <motion.p
-              variants={FADE_UP}
-              transition={TRANSITION_DEFAULT}
-              className="mt-6 font-body text-marmorino leading-relaxed text-[clamp(16px,1.6vw,19px)] max-w-xl"
-            >
+            </p>
+            <DisplayHeadline
+              bronze={HOME_LOCATION.bronze}
+              bronzeItalic={HOME_LOCATION.bronzeItalic}
+              align="left"
+            />
+            <p className="mt-6 font-body text-marmorino leading-relaxed text-[clamp(16px,1.6vw,19px)] max-w-xl">
               {HOME_LOCATION.description}
-            </motion.p>
+            </p>
 
             {/* Divider */}
-            <motion.div
-              variants={FADE_UP}
-              transition={TRANSITION_DEFAULT}
-              className="mt-10 mb-10 w-16 h-px bg-bronze"
-              aria-hidden="true"
-            />
+            <div className="mt-10 mb-10 w-16 h-px bg-bronze" aria-hidden="true" />
 
             {/* Info stack */}
-            <motion.dl
-              variants={FADE_UP}
-              transition={TRANSITION_DEFAULT}
-              className="space-y-7 md:space-y-8"
-            >
+            <dl className="space-y-7 md:space-y-8">
               {/* Address */}
               <div className="flex items-start gap-4">
                 <span aria-hidden="true" className="shrink-0 mt-1 text-bronze">
@@ -133,14 +101,10 @@ export function LocationSection() {
                   </dd>
                 </div>
               </div>
-            </motion.dl>
+            </dl>
 
             {/* CTAs */}
-            <motion.div
-              variants={FADE_UP}
-              transition={TRANSITION_DEFAULT}
-              className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4"
-            >
+            <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <Button
                 variant="pill"
                 as="a"
@@ -168,22 +132,16 @@ export function LocationSection() {
                   strokeWidth={1.5}
                 />
               </a>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* RIGHT — map */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.98 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 1.0, ease: EASE_PREMIUM }}
-            className="lg:col-span-7"
-          >
+          <div className="lg:col-span-7">
             <Map
               query={HOME_LOCATION.mapQuery}
               title="Mapa com a localização da Biodonth em Artur Alvim"
             />
-          </motion.div>
+          </div>
         </div>
       </Container>
     </section>

@@ -1,13 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
 import { Container } from '@/components/ui/Container';
 import { DisplayHeadline } from '@/components/ui/DisplayHeadline';
 import { BeforeAfter } from '@/components/ui/BeforeAfter';
 import { BEFORE_AFTER_CASES } from '@/content/before-after';
 import { HOME_BEFORE_AFTER } from '@/content/home';
-import { FADE_UP, TRANSITION_DEFAULT, EASE_PREMIUM } from '@/lib/motion';
 
 export function BeforeAfterShowcase() {
   const [activeId, setActiveId] = useState(BEFORE_AFTER_CASES[0].id);
@@ -17,69 +15,35 @@ export function BeforeAfterShowcase() {
     <section id="resultados" className="relative bg-concrete-warm py-16 md:py-24 lg:py-28 overflow-hidden">
       <Container width="wide">
         {/* Header */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ staggerChildren: 0.12 }}
-          className="max-w-3xl mx-auto text-center mb-12 md:mb-16 lg:mb-20"
-        >
-          <motion.p
-            variants={FADE_UP}
-            transition={TRANSITION_DEFAULT}
-            className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6"
-          >
+        <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16 lg:mb-20">
+          <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
             {HOME_BEFORE_AFTER.eyebrow}
-          </motion.p>
-
-          <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>
-            <DisplayHeadline
-              bronze={HOME_BEFORE_AFTER.bronze}
-              bronzeItalic={HOME_BEFORE_AFTER.bronzeItalic}
-              align="center"
-            />
-          </motion.div>
-
-          <motion.p
-            variants={FADE_UP}
-            transition={TRANSITION_DEFAULT}
-            className="mt-6 font-body text-marmorino leading-relaxed text-[clamp(16px,1.6vw,19px)] max-w-2xl mx-auto"
-          >
+          </p>
+          <DisplayHeadline
+            bronze={HOME_BEFORE_AFTER.bronze}
+            bronzeItalic={HOME_BEFORE_AFTER.bronzeItalic}
+            align="center"
+          />
+          <p className="mt-6 font-body text-marmorino leading-relaxed text-[clamp(16px,1.6vw,19px)] max-w-2xl mx-auto">
             {HOME_BEFORE_AFTER.description}
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
 
         {/* Slider area */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 1.0, ease: EASE_PREMIUM }}
-          className="max-w-2xl mx-auto"
-        >
+        <div className="max-w-2xl mx-auto">
           <div className="mb-5 md:mb-6 flex items-center justify-center gap-3 text-marmorino font-body text-[13px] tracking-wide">
             <span aria-hidden="true" className="w-1 h-1 rounded-full bg-bronze shrink-0" />
             <span className="italic font-display text-[15px] md:text-[16px]">{active.treatmentTag}</span>
             <span aria-hidden="true" className="w-1 h-1 rounded-full bg-bronze shrink-0" />
           </div>
 
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={active.id}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.35, ease: EASE_PREMIUM }}
-            >
-              <BeforeAfter
-                before={active.before}
-                after={active.after}
-                beforeLabel={HOME_BEFORE_AFTER.beforeLabel}
-                afterLabel={HOME_BEFORE_AFTER.afterLabel}
-                hint={HOME_BEFORE_AFTER.hint}
-              />
-            </motion.div>
-          </AnimatePresence>
+          <BeforeAfter
+            before={active.before}
+            after={active.after}
+            beforeLabel={HOME_BEFORE_AFTER.beforeLabel}
+            afterLabel={HOME_BEFORE_AFTER.afterLabel}
+            hint={HOME_BEFORE_AFTER.hint}
+          />
 
           <div
             role="tablist"
@@ -106,7 +70,7 @@ export function BeforeAfterShowcase() {
               );
             })}
           </div>
-        </motion.div>
+        </div>
       </Container>
     </section>
   );

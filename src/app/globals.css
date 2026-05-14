@@ -37,7 +37,6 @@
     font-family: var(--font-body);
     color: var(--color-charcoal);
     background: var(--color-concrete);
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
