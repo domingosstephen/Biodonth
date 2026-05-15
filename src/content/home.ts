@@ -6,10 +6,10 @@
 
 export const HOME_HERO = {
   eyebrow: 'Odontologia integrada \u2022 Artur Alvim',
-  bronze: 'Volte a sorrir',
-  bronzeItalic: 'sem pensar duas vezes.',
+  bronze: 'Volte a sorrir com segurança,',
+  bronzeItalic: 'cuidado e confiança.',
   subhead:
-    'O sorriso que faz diferen\u00e7a no jantar, na foto, na entrevista. A Biodonth devolve a confian\u00e7a que voc\u00ea perdeu \u2014 com um plano feito para a sua boca, sem pressa na primeira consulta, e zero press\u00e3o para decidir na hora.',
+    'Na Biodonth, cada sorriso é avaliado de forma individual, com atenção à sua saúde bucal, às suas necessidades e aos seus objetivos. Nossa responsável técnica conduz um atendimento humanizado, sem pressa e com planejamento personalizado, para que você entenda cada etapa do tratamento antes de tomar qualquer decisão.',
   primaryCta: { label: 'Agendar consulta' },
   secondaryCta: {
     label: 'Conhe\u00e7a nossos tratamentos',
@@ -24,15 +24,15 @@ export const HOME_HERO = {
 } as const;
 
 export const HOME_TRUST_STRIP = {
-  text: 'Desde 2015, fazemos uma coisa s\u00f3 \u2014 e fazemos bem feito.',
+  text: 'Desde 2015, unimos experiência, tecnologia e cuidado para transformar sorrisos.',
 } as const;
 
 export const HOME_VIDEO = {
-  eyebrow: 'Como \u00e9 estar aqui',
-  bronze: 'O barulho da broca',
-  bronzeItalic: 'fica para depois.',
+  eyebrow: 'Como é estar aqui',
+  bronze: 'Aqui, o cuidado começa',
+  bronzeItalic: 'antes do tratamento.',
   description:
-    'Quando voc\u00ea entra, primeiro v\u00ea o piso, a luz, o sil\u00eancio. Quase nunca a cadeira. Essa \u00e9 uma escolha. A consulta come\u00e7a no acolhimento \u2014 no ch\u00e1, na conversa, na sua hist\u00f3ria \u2014 e s\u00f3 depois chega ao tratamento. Veja a Biodonth por dentro.',
+    'Quando você chega à Biodonth, a primeira sensação deve ser de acolhimento. Um ambiente tranquilo, uma conversa sem pressa e uma equipe preparada para ouvir sua história antes de falar sobre procedimentos. Porque, para nós, cada tratamento começa com confiança.',
   videoSrc: '/videos/biodonth-tour.mp4',
   posterSrc: '/images/video/biodonth-tour-poster.jpg',
   posterFallback:
@@ -43,20 +43,20 @@ export const HOME_VIDEO = {
 
 export const HOME_TREATMENTS = {
   eyebrow: 'O que sabemos fazer',
-  bronze: 'Todas as especialidades.',
-  bronzeItalic: 'Uma equipe. Um plano.',
+  bronze: 'Uma equipe integrada para cuidar',
+  bronzeItalic: 'do seu sorriso por completo.',
   description:
-    'Da limpeza ao implante, da ortodontia \u00e0 reabilita\u00e7\u00e3o \u2014 sem peregrinar de cl\u00ednica em cl\u00ednica, sem repetir a mesma hist\u00f3ria em tr\u00eas consult\u00f3rios diferentes. As especialidades dialogam entre si dentro da mesma sala. \u00c9 isso que \u201cintegrada\u201d significa, e o que faz toda a diferen\u00e7a no seu resultado.',
+    'Na Biodonth, seu tratamento não é visto em partes isoladas. Da limpeza ao implante, da ortodontia à reabilitação, cada especialidade conversa com a outra para construir um plano mais completo, seguro e personalizado.\nVocê não precisa passar por vários lugares, repetir sua história ou tentar juntar opiniões diferentes. Aqui, a equipe olha para o seu caso como um todo — e isso faz toda diferença no resultado.',
   ctaLabel: 'Ver todos os tratamentos',
   ctaHref: '/tratamentos',
 } as const;
 
 export const HOME_BEFORE_AFTER = {
-  eyebrow: 'Resultados de quem decidiu come\u00e7ar',
-  bronze: 'Antes parece longe.',
-  bronzeItalic: 'Depois parece sempre.',
+  eyebrow: 'Resultados de quem decidiu começar',
+  bronze: 'Toda transformação começa',
+  bronzeItalic: 'com uma decisão.',
   description:
-    'Cada caso aqui \u00e9 de algu\u00e9m que adiou \u2014 por medo, por pre\u00e7o, por achar que n\u00e3o dava mais. Arraste a barra e veja onde a decis\u00e3o os levou.',
+    'Muitos dos pacientes que passam pela Biodonth chegaram até nós após adiar o tratamento por medo, insegurança ou por acreditarem que não havia mais solução. Com planejamento, cuidado e acompanhamento, cada caso encontra um caminho possível.\nArraste a barra e veja a transformação entre o antes e o depois.',
   hint: 'Arraste para ver a transforma\u00e7\u00e3o',
   beforeLabel: 'Antes',
   afterLabel: 'Depois',
