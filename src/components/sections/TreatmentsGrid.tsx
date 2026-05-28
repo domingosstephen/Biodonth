@@ -1,8 +1,7 @@
 import { Container } from '@/components/ui/Container';
 import { DisplayHeadline } from '@/components/ui/DisplayHeadline';
-import { Button } from '@/components/ui/Button';
 import { TreatmentCard } from '@/components/ui/TreatmentCard';
-import { HOMEPAGE_TREATMENTS } from '@/content/treatments';
+import { TREATMENTS } from '@/content/treatments';
 import { HOME_TREATMENTS } from '@/content/home';
 
 export function TreatmentsGrid() {
@@ -26,23 +25,11 @@ export function TreatmentsGrid() {
           />
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-10 md:gap-x-7 md:gap-y-14">
-          {HOMEPAGE_TREATMENTS.map((treatment) => (
+        {/* Grid — all 12 treatments, 3 columns on mobile, 4 on desktop */}
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-5 md:gap-y-10">
+          {TREATMENTS.map((treatment) => (
             <TreatmentCard key={treatment.slug} treatment={treatment} />
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="mt-14 md:mt-20 text-center">
-          <Button
-            variant="ghost"
-            as="a"
-            href={HOME_TREATMENTS.ctaHref}
-            size="lg"
-          >
-            {HOME_TREATMENTS.ctaLabel}
-          </Button>
         </div>
       </Container>
     </section>

@@ -24,7 +24,7 @@ export const ESPECIALISTAS: Especialista[] = [
     role: 'Diretora cl\u00ednica \u2022 Reabilita\u00e7\u00e3o oral',
     philosophy:
       'Cada paciente carrega uma boca inteira at\u00e9 a primeira consulta. Meu trabalho \u00e9 n\u00e3o dividir essa boca em peda\u00e7os s\u00f3 para tratar mais r\u00e1pido. Vamos com calma, pe\u00e7a por pe\u00e7a, at\u00e9 voltar a fazer sentido.',
-    treatments: ['reabilitacao-oral', 'protese', 'profilaxia'],
+    treatments: ['protese', 'cirurgias', 'checkup'],
     cro: 'CRO-SP 00000',
     image: {
       src: '/images/especialistas/diretora-clinica.jpg',
@@ -158,12 +158,15 @@ export const ESPECIALISTAS_PAGE = {
   treatmentDisplayNames: {
     'implantes-dentarios': 'Implantes',
     'ortodontia': 'Ortodontia',
-    'facetas': 'Facetas',
+    'alinhadores': 'Alinhadores',
+    'facetas': 'Facetas e lentes de contato',
     'clareamento': 'Clareamento',
-    'reabilitacao-oral': 'Reabilita\u00e7\u00e3o oral',
+    'endodontia': 'Endodontia',
     'odontopediatria': 'Odontopediatria',
     'protese': 'Pr\u00f3tese',
-    'profilaxia': 'Profilaxia',
-    'saude-gengiva': 'Sa\u00fade da gengiva',
+    'cirurgias': 'Cirurgias',
+    'harmonizacao-orofacial': 'Harmonização facial',
+    'checkup': 'Check-up preventivo digital',
+    'saude-gengiva': 'Periodontia',
   } as Record<string, string>,
 } as const;

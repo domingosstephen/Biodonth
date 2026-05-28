@@ -1,5 +1,5 @@
 // Biodonth treatments data. Single source of truth for treatment cards.
-// 9 treatments matching the real Biodonth catalog (biodonth.com.br).
+// 12 treatments matching the real Biodonth catalog.
 // Descriptions: persuasion-driven, patient-as-protagonist.
 
 export type Treatment = {
@@ -16,58 +16,58 @@ export type Treatment = {
 export const TREATMENTS: Treatment[] = [
   {
     slug: 'implantes-dentarios',
-    name: 'Implantes dent\u00e1rios',
-    shortDescription: 'Volte a morder a ma\u00e7\u00e3 sem pensar duas vezes. Volte a rir no jantar sem cobrir a boca. O implante devolve o que faltava, e fica.',
+    name: 'Implantes dentários',
+    shortDescription: 'Volte a morder a maçã sem pensar duas vezes. Volte a rir no jantar sem cobrir a boca. O implante devolve o que faltava, e fica.',
     image: {
-      src: '/images/tratamentos/implantes.jpg',
-      alt: 'Tratamento de implante dent\u00e1rio na Biodonth',
+      src: '/images/tratamentos/implantes.png',
+      alt: 'Tratamento de implante dentário na Biodonth',
       fallback: 'https://picsum.photos/seed/biodonth-implantes/800/1000',
+    },
+  },
+  {
+    slug: 'protese',
+    name: 'Prótese dentária',
+    shortDescription: 'Dentes que parecem seus, funcionam como seus, ficam onde você precisa que eles fiquem. Fixas ou removíveis, planejadas para durar.',
+    image: {
+      src: '/images/tratamentos/protese.png',
+      alt: 'Prótese dentária',
+      fallback: 'https://picsum.photos/seed/biodonth-protese/800/1000',
+    },
+  },
+  {
+    slug: 'cirurgias',
+    name: 'Cirurgias',
+    shortDescription: 'Quando o caso pede intervenção, a equipe está preparada. Cirurgias orais planejadas com precisão, segurança e acompanhamento do início ao fim.',
+    image: {
+      src: '/images/tratamentos/cirurgias.png',
+      alt: 'Cirurgias orais na Biodonth',
+      fallback: 'https://picsum.photos/seed/biodonth-cirurgias/800/1000',
     },
   },
   {
     slug: 'ortodontia',
     name: 'Ortodontia',
-    shortDescription: 'Aparelho n\u00e3o precisa virar identidade. Alinhadores transparentes ou aparelho fixo discreto, escolhidos pelo seu rosto, sua agenda e sua rotina.',
+    shortDescription: 'Aparelho não precisa virar identidade. Alinhadores transparentes ou aparelho fixo discreto, escolhidos pelo seu rosto, sua agenda e sua rotina.',
     image: {
       src: '/images/tratamentos/ortodontia.jpg',
-      alt: 'Tratamento ortod\u00f4ntico',
+      alt: 'Tratamento ortodôntico',
       fallback: 'https://picsum.photos/seed/biodonth-ortodontia/800/1000',
     },
   },
   {
-    slug: 'facetas',
-    name: 'Facetas em porcelana',
-    shortDescription: 'O sorriso que voc\u00ea desenhou na cabe\u00e7a, em poucas semanas. Lentes de porcelana finas, planejadas no detalhe \u2014 daquelas que ningu\u00e9m percebe que existem.',
+    slug: 'alinhadores',
+    name: 'Alinhadores transparentes',
+    shortDescription: 'Corrigir os dentes sem que ninguém perceba. Alinhadores removíveis, confortáveis e praticamente invisíveis — o tratamento que cabe na sua rotina.',
     image: {
-      src: '/images/tratamentos/facetas.jpg',
-      alt: 'Facetas dent\u00e1rias em porcelana',
-      fallback: 'https://picsum.photos/seed/biodonth-facetas/800/1000',
-    },
-  },
-  {
-    slug: 'clareamento',
-    name: 'Clareamento dental',
-    shortDescription: 'A diferen\u00e7a que aparece em fotos, em entrevistas, em primeiros encontros. Em poucas sess\u00f5es, com gel que respeita o esmalte.',
-    image: {
-      src: '/images/tratamentos/clareamento.jpg',
-      alt: 'Procedimento de clareamento dental',
-      fallback: 'https://picsum.photos/seed/biodonth-clareamento/800/1000',
-    },
-  },
-  {
-    slug: 'reabilitacao-oral',
-    name: 'Reabilita\u00e7\u00e3o oral',
-    shortDescription: 'Quando comer pesa, falar cansa e sorrir n\u00e3o est\u00e1 mais no menu \u2014 o caminho \u00e9 refazer com calma. Etapa por etapa, sem pular, at\u00e9 a boca voltar a ser sua.',
-    image: {
-      src: '/images/tratamentos/reabilitacao.jpg',
-      alt: 'Reabilita\u00e7\u00e3o oral completa',
-      fallback: 'https://picsum.photos/seed/biodonth-reabilitacao/800/1000',
+      src: '/images/tratamentos/alinhadores.png',
+      alt: 'Tratamento com alinhadores transparentes',
+      fallback: 'https://picsum.photos/seed/biodonth-alinhadores/800/1000',
     },
   },
   {
     slug: 'odontopediatria',
     name: 'Odontopediatria',
-    shortDescription: 'A primeira rela\u00e7\u00e3o do seu filho com o dentista \u00e9 a que ele leva para a vida. A gente faz quest\u00e3o de que ela comece bem.',
+    shortDescription: 'A primeira relação do seu filho com o dentista é a que ele leva para a vida. A gente faz questão de que ela comece bem.',
     image: {
       src: '/images/tratamentos/odontopediatria.jpg',
       alt: 'Atendimento de odontopediatria',
@@ -75,33 +75,63 @@ export const TREATMENTS: Treatment[] = [
     },
   },
   {
-    slug: 'protese',
-    name: 'Pr\u00f3tese dent\u00e1ria',
-    shortDescription: 'Dentes que parecem seus, funcionam como seus, ficam onde voc\u00ea precisa que eles fiquem. Fixas ou remov\u00edveis, planejadas para durar.',
+    slug: 'facetas',
+    name: 'Facetas e lentes de contato',
+    shortDescription: 'O sorriso que você desenhou na cabeça, em poucas semanas. Lentes de porcelana finas, planejadas no detalhe — daquelas que ninguém percebe que existem.',
     image: {
-      src: '/images/tratamentos/protese.jpg',
-      alt: 'Pr\u00f3tese dent\u00e1ria',
-      fallback: 'https://picsum.photos/seed/biodonth-protese/800/1000',
+      src: '/images/tratamentos/facetas.png',
+      alt: 'Facetas dentárias em porcelana',
+      fallback: 'https://picsum.photos/seed/biodonth-facetas/800/1000',
     },
   },
   {
-    slug: 'profilaxia',
-    name: 'Profilaxia',
-    shortDescription: 'A limpeza que escova nenhuma alcan\u00e7a. O cuidado simples que evita os caros \u2014 e a \u00fanica visita que pedimos para voc\u00ea n\u00e3o pular nunca.',
+    slug: 'clareamento',
+    name: 'Clareamento dental',
+    shortDescription: 'A diferença que aparece em fotos, em entrevistas, em primeiros encontros. Em poucas sessões, com gel que respeita o esmalte.',
     image: {
-      src: '/images/tratamentos/profilaxia.jpg',
-      alt: 'Profilaxia dental',
-      fallback: 'https://picsum.photos/seed/biodonth-profilaxia/800/1000',
+      src: '/images/tratamentos/clareamento.jpg',
+      alt: 'Procedimento de clareamento dental',
+      fallback: 'https://picsum.photos/seed/biodonth-clareamento/800/1000',
+    },
+  },
+  {
+    slug: 'harmonizacao-orofacial',
+    name: 'Harmonização facial',
+    shortDescription: 'O equilíbrio que o rosto pede, com a precisão de quem entende a anatomia por completo. Resultados naturais, planejados pelo olhar do dentista.',
+    image: {
+      src: '/images/tratamentos/hof.png',
+      alt: 'Harmonização orofacial',
+      fallback: 'https://picsum.photos/seed/biodonth-hof/800/1000',
+    },
+  },
+  {
+    slug: 'checkup',
+    name: 'Check-up preventivo digital',
+    shortDescription: 'A consulta que antecipa problemas antes de eles aparecerem. O cuidado regular que mantém a boca saudável e evita surpresas.',
+    image: {
+      src: '/images/tratamentos/checkup.png',
+      alt: 'Check-up dental na Biodonth',
+      fallback: 'https://picsum.photos/seed/biodonth-checkup/800/1000',
     },
   },
   {
     slug: 'saude-gengiva',
-    name: 'Sa\u00fade da gengiva',
-    shortDescription: 'A gengiva \u00e9 o alicerce. Antes de qualquer est\u00e9tica, antes de qualquer implante, \u00e9 onde o sorriso come\u00e7a \u2014 ou cai.',
+    name: 'Periodontia',
+    shortDescription: 'A gengiva é o alicerce. Antes de qualquer estética, antes de qualquer implante, é onde o sorriso começa — ou cai.',
     image: {
-      src: '/images/tratamentos/gengiva.jpg',
+      src: '/images/tratamentos/gengiva.jpeg',
       alt: 'Tratamento de periodontia',
       fallback: 'https://picsum.photos/seed/biodonth-gengiva/800/1000',
+    },
+  },
+  {
+    slug: 'endodontia',
+    name: 'Endodontia',
+    shortDescription: 'Salvar o dente que dói é melhor do que perder. Tratamento de canal moderno, preciso e mais confortável do que você imagina.',
+    image: {
+      src: '/images/tratamentos/endodontia.png',
+      alt: 'Tratamento endodôntico na Biodonth',
+      fallback: 'https://picsum.photos/seed/biodonth-endodontia/800/1000',
     },
   },
 ];

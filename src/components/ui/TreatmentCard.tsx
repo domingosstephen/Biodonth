@@ -16,7 +16,7 @@ export function TreatmentCard({ treatment }: TreatmentCardProps) {
       {/* Image */}
       <div className="relative aspect-[4/5] overflow-hidden border-[1.5px] border-bronze bg-concrete-warm">
         <Image
-          src={treatment.image.fallback}
+          src={treatment.image.src}
           alt={treatment.image.alt}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"

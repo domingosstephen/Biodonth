@@ -44,6 +44,7 @@ export function BeforeAfterShowcase() {
             beforeLabel={HOME_BEFORE_AFTER.beforeLabel}
             afterLabel={HOME_BEFORE_AFTER.afterLabel}
             hint={HOME_BEFORE_AFTER.hint}
+            objectPosition={active.objectPosition}
           />
 
           <div

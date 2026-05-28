@@ -86,11 +86,10 @@ export const HOME_FAQ = {
 
 export const HOME_LOCATION = {
   eyebrow: 'Onde estamos',
-  bronze: 'Hora marcada,',
-  bronzeItalic: 'sem fila no balc\u00e3o.',
-  // [CONFIRM-BIODONTH: distance to Estação Artur Alvim, parking availability. Edit if inaccurate.]
+  bronze: 'Hora marcada, atendimento',
+  bronzeItalic: 'com mais tranquilidade.',
   description:
-    'Em Artur Alvim, zona leste de S\u00e3o Paulo, a poucos minutos do metr\u00f4. Marque um hor\u00e1rio que cabe na sua vida \u2014 n\u00e3o no hor\u00e1rio de uma fila \u2014 e seja recebido na hora que combinamos.',
+    'Estamos na zona leste de São Paulo, a poucos minutos do metrô Artur Alvim. Agende sua consulta e conte com um atendimento organizado, acolhedor e pensado para respeitar o seu tempo.',
   labels: {
     address: 'Endere\u00e7o',
     hours: 'Atendimento',
