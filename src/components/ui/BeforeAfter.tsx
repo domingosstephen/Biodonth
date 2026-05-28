@@ -12,6 +12,7 @@ type BeforeAfterProps = {
   hint?: string;
   initial?: number;
   objectPosition?: string;
+  scale?: number;
 };
 
 export function BeforeAfter({
@@ -22,6 +23,7 @@ export function BeforeAfter({
   hint = 'Arraste para ver a transformação',
   initial = 50,
   objectPosition,
+  scale,
 }: BeforeAfterProps) {
   const [position, setPosition] = useState(initial);
   const [dragging, setDragging] = useState(false);
@@ -111,7 +113,7 @@ export function BeforeAfter({
         fill
         sizes="(max-width: 1024px) 90vw, 700px"
         className="object-cover pointer-events-none"
-        style={objectPosition ? { objectPosition } : undefined}
+        style={{ ...(objectPosition ? { objectPosition } : {}), ...(scale ? { transform: `scale(${scale})` } : {}) }}
         onError={() => setAfterErrored(true)}
       />
 
@@ -126,7 +128,7 @@ export function BeforeAfter({
           fill
           sizes="(max-width: 1024px) 90vw, 700px"
           className="object-cover"
-          style={objectPosition ? { objectPosition } : undefined}
+          style={{ ...(objectPosition ? { objectPosition } : {}), ...(scale ? { transform: `scale(${scale})` } : {}) }}
           onError={() => setBeforeErrored(true)}
         />
       </div>

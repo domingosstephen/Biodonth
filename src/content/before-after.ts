@@ -6,6 +6,7 @@ export type BeforeAfterCase = {
   label: string;            // Short label shown in the thumbnail row
   treatmentTag: string;     // Eyebrow above the slider when this case is active
   objectPosition?: string;  // CSS object-position to focus on teeth area
+  scale?: number;           // CSS scale to zoom into the mouth region
   before: {
     src: string;
     fallback: string;
@@ -39,7 +40,8 @@ export const BEFORE_AFTER_CASES: BeforeAfterCase[] = [
     id: 'facetas',
     label: 'Facetas',
     treatmentTag: 'Estética com facetas em porcelana',
-    objectPosition: 'center 65%',
+    objectPosition: 'center 80%',
+    scale: 1.6,
     before: {
       src: '/images/antes-depois/faceta-antes.png',
       fallback: 'https://picsum.photos/seed/biodonth-ba-2a/1200/1500',
@@ -55,7 +57,8 @@ export const BEFORE_AFTER_CASES: BeforeAfterCase[] = [
     id: 'clareamento',
     label: 'Clareamento',
     treatmentTag: 'Clareamento dental',
-    objectPosition: 'center 65%',
+    objectPosition: 'center 80%',
+    scale: 1.6,
     before: {
       src: '/images/antes-depois/clareamento-antes.png',
       fallback: 'https://picsum.photos/seed/biodonth-ba-3a/1200/1500',
@@ -71,7 +74,8 @@ export const BEFORE_AFTER_CASES: BeforeAfterCase[] = [
     id: 'alinhador',
     label: 'Alinhador',
     treatmentTag: 'Correção com alinhadores transparentes',
-    objectPosition: 'center 68%',
+    objectPosition: 'center 78%',
+    scale: 1.5,
     before: {
       src: '/images/antes-depois/alinhador-antes.png',
       fallback: 'https://picsum.photos/seed/biodonth-ba-4a/1200/1500',
