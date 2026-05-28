@@ -113,7 +113,7 @@ export function BeforeAfter({
         fill
         sizes="(max-width: 1024px) 90vw, 700px"
         className="object-cover pointer-events-none"
-        style={{ ...(objectPosition ? { objectPosition } : {}), ...(scale ? { transform: `scale(${scale})` } : {}) }}
+        style={{ ...(objectPosition ? { objectPosition } : {}), ...(scale ? { transform: `scale(${scale})`, transformOrigin: 'center bottom' } : {}) }}
         onError={() => setAfterErrored(true)}
       />
 
@@ -128,7 +128,7 @@ export function BeforeAfter({
           fill
           sizes="(max-width: 1024px) 90vw, 700px"
           className="object-cover"
-          style={{ ...(objectPosition ? { objectPosition } : {}), ...(scale ? { transform: `scale(${scale})` } : {}) }}
+          style={{ ...(objectPosition ? { objectPosition } : {}), ...(scale ? { transform: `scale(${scale})`, transformOrigin: 'center bottom' } : {}) }}
           onError={() => setBeforeErrored(true)}
         />
       </div>
