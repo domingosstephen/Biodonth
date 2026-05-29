@@ -74,8 +74,8 @@ export const BEFORE_AFTER_CASES: BeforeAfterCase[] = [
     id: 'alinhador',
     label: 'Alinhador',
     treatmentTag: 'Correção com alinhadores transparentes',
-    objectPosition: 'center bottom',
-    scale: 2.2,
+    objectPosition: 'center 70%',
+    scale: 1.7,
     before: {
       src: '/images/antes-depois/alinhador-antes.png',
       fallback: 'https://picsum.photos/seed/biodonth-ba-4a/1200/1500',
