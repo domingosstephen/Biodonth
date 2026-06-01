@@ -19,7 +19,7 @@ export function VideoSection() {
       <Container width="wide">
         {/* Header block */}
         <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16 lg:mb-20">
-          <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+          <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
             {HOME_VIDEO.eyebrow}
           </p>
           <DisplayHeadline

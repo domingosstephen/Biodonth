@@ -15,7 +15,7 @@ export function LocationSection() {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-20 items-stretch">
           {/* LEFT — info */}
           <div className="lg:col-span-5">
-            <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+            <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
               {HOME_LOCATION.eyebrow}
             </p>
             <DisplayHeadline

@@ -12,7 +12,7 @@ export function PrevencaoSubpageIncluded({ content }: { content: PrevencaoConten
     <section className="relative bg-concrete py-20 md:py-28 lg:py-36 overflow-hidden">
       <Container width="default">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} transition={{ staggerChildren: 0.12 }} className="max-w-3xl mx-auto text-center mb-14 md:mb-20">
-          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">{included.eyebrow}</motion.p>
+          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">{included.eyebrow}</motion.p>
           <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>
             <DisplayHeadline bronze={included.title} bronzeItalic={included.titleItalic} align="center" />
           </motion.div>

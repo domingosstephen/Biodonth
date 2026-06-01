@@ -26,7 +26,7 @@ export function ContatoClosing() {
           transition={{ staggerChildren: 0.12 }}
           className="max-w-3xl mb-12 md:mb-16"
         >
-          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
             {closing.eyebrow}
           </motion.p>
           <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>
@@ -62,7 +62,7 @@ export function ContatoClosing() {
             className="lg:col-span-4 flex flex-col justify-between"
           >
             <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT} className="bg-pure border-[1.5px] border-marmorino-light/40 p-7 md:p-8">
-              <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze font-medium mb-3">
+              <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze-dark font-medium mb-3">
                 Endere\u00e7o completo
               </p>
               <p className="font-display text-[clamp(17px,1.8vw,20px)] text-charcoal leading-snug mb-4">
@@ -74,7 +74,7 @@ export function ContatoClosing() {
               <p className="font-body text-[13px] text-marmorino-light">CEP {CONTACT.address.cep}</p>
 
               <div className="mt-6 pt-6 border-t border-marmorino-light/40">
-                <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze font-medium mb-3">
+                <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze-dark font-medium mb-3">
                   Atendimento
                 </p>
                 <p className="font-body text-[14px] text-charcoal mb-1">{CONTACT.hours.weekdays}</p>

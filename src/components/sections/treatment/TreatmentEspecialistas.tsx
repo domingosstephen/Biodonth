@@ -14,7 +14,7 @@ export function TreatmentEspecialistas({ slug }: { slug: string }) {
     <section className="relative bg-concrete-warm py-16 md:py-20 lg:py-24 overflow-hidden">
       <Container width="default">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} transition={{ staggerChildren: 0.12 }} className="max-w-3xl mx-auto text-center mb-10 md:mb-14">
-          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-4">Quem conduz este tratamento</motion.p>
+          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-4">Quem conduz este tratamento</motion.p>
           <motion.h2 variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-display font-normal text-[clamp(24px,3vw,36px)] leading-[1.2] text-charcoal">
             Especialistas <em className="font-display italic text-bronze">dedicados.</em>
           </motion.h2>

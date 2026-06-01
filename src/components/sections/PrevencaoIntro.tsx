@@ -24,7 +24,7 @@ export function PrevencaoIntro() {
             <motion.p
               variants={FADE_UP}
               transition={TRANSITION_DEFAULT}
-              className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6"
+              className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6"
             >
               {intro.eyebrow}
             </motion.p>

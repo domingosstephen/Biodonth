@@ -21,7 +21,7 @@ export function Faq() {
       <Container width="default">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-14 md:mb-18 lg:mb-22">
-          <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+          <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
             {HOME_FAQ.eyebrow}
           </p>
           <DisplayHeadline bronze={HOME_FAQ.bronze} bronzeItalic={HOME_FAQ.bronzeItalic} align="center" headingLevel="h2" />

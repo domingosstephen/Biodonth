@@ -106,7 +106,7 @@ export function LegalPageLayout({ page }: LegalPageLayoutProps) {
             transition={{ staggerChildren: 0.12, delayChildren: 0.1 }}
             className="max-w-3xl"
           >
-            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
               {page.hero.eyebrow}
             </motion.p>
             <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>
@@ -129,7 +129,7 @@ export function LegalPageLayout({ page }: LegalPageLayoutProps) {
             {/* TOC */}
             <aside className="lg:col-span-4 xl:col-span-3">
               <div className="lg:sticky lg:top-32">
-                <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze font-medium mb-5">
+                <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze-dark font-medium mb-5">
                   {page.toc.title}
                 </p>
                 <nav aria-label="\u00cdndice da p\u00e1gina">
@@ -200,7 +200,7 @@ export function LegalPageLayout({ page }: LegalPageLayoutProps) {
             transition={{ staggerChildren: 0.12 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
               {page.closing.eyebrow}
             </motion.p>
             <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>

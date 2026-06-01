@@ -23,7 +23,7 @@ export function EspecialistasClosing() {
           transition={{ staggerChildren: 0.12 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
             {closing.eyebrow}
           </motion.p>
 

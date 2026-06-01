@@ -18,7 +18,7 @@ export function ContatoExpect() {
           transition={{ staggerChildren: 0.12 }}
           className="max-w-3xl mx-auto text-center mb-12 md:mb-16"
         >
-          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
             {expect.eyebrow}
           </motion.p>
           <motion.h2 variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-display font-normal text-[clamp(28px,3.4vw,42px)] leading-[1.2] tracking-[-0.01em] text-charcoal">

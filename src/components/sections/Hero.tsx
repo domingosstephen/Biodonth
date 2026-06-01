@@ -15,7 +15,7 @@ export function Hero() {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-16 items-center">
           {/* LEFT — content */}
           <div className="lg:col-span-5 order-2 lg:order-1">
-            <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+            <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
               {HOME_HERO.eyebrow}
             </p>
 

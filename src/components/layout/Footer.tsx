@@ -50,12 +50,12 @@ export function Footer() {
             <h3 className="font-body uppercase text-[11px] tracking-[0.22em] font-medium text-bronze mb-6">
               {FOOTER.columns.navigate.label}
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {FOOTER.columns.navigate.links.map((link) => (
                 <li key={link.href + link.label}>
                   <Link
                     href={link.href}
-                    className="group inline-flex items-center font-body text-[14px] md:text-[15px] text-concrete/85 hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-4"
+                    className="group inline-flex items-center min-h-[44px] font-body text-[14px] md:text-[15px] text-concrete/85 hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-4"
                   >
                     <span className="relative">
                       {link.label}
@@ -75,38 +75,38 @@ export function Footer() {
             <h3 className="font-body uppercase text-[11px] tracking-[0.22em] font-medium text-bronze mb-6">
               {FOOTER.columns.contact.label}
             </h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-bronze" strokeWidth={1.5} aria-hidden="true" />
+            <ul className="space-y-2">
+              <li className="flex items-start gap-3 py-1">
+                <MapPin className="w-4 h-4 mt-1.5 shrink-0 text-bronze" strokeWidth={1.5} aria-hidden="true" />
                 <span className="font-body text-[14px] md:text-[15px] text-concrete/85 leading-relaxed">
                   {CONTACT.address.full}
                 </span>
               </li>
-              <li className="flex items-start gap-3">
-                <PhoneIcon className="w-4 h-4 mt-0.5 shrink-0 text-bronze" strokeWidth={1.5} aria-hidden="true" />
+              <li className="flex items-center gap-3">
+                <PhoneIcon className="w-4 h-4 shrink-0 text-bronze" strokeWidth={1.5} aria-hidden="true" />
                 <a
                   href={TEL_URL}
-                  className="font-body text-[14px] md:text-[15px] text-concrete/85 hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2"
+                  className="font-body text-[14px] md:text-[15px] text-concrete/85 hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2 py-2"
                 >
                   {CONTACT.phone.display}
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <MessageCircle className="w-4 h-4 mt-0.5 shrink-0 text-bronze" strokeWidth={1.5} aria-hidden="true" />
+              <li className="flex items-center gap-3">
+                <MessageCircle className="w-4 h-4 shrink-0 text-bronze" strokeWidth={1.5} aria-hidden="true" />
                 <a
                   href={WHATSAPP_CTA_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-body text-[14px] md:text-[15px] text-concrete/85 hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2"
+                  className="font-body text-[14px] md:text-[15px] text-concrete/85 hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2 py-2"
                 >
                   {CONTACT.whatsapp.display}
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <Mail className="w-4 h-4 mt-0.5 shrink-0 text-bronze" strokeWidth={1.5} aria-hidden="true" />
+              <li className="flex items-center gap-3">
+                <Mail className="w-4 h-4 shrink-0 text-bronze" strokeWidth={1.5} aria-hidden="true" />
                 <a
                   href={`mailto:${CONTACT.email}`}
-                  className="font-body text-[14px] md:text-[15px] text-concrete/85 hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2 break-all"
+                  className="font-body text-[14px] md:text-[15px] text-concrete/85 hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2 break-all py-2"
                 >
                   {CONTACT.email}
                 </a>
@@ -134,7 +134,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Instagram da Biodonth (${SOCIAL.instagram.handle})`}
-                  className="flex items-center justify-center w-10 h-10 border border-marmorino/40 text-concrete/85 hover:text-bronze hover:border-bronze transition-all duration-300 ease-[var(--ease-premium)] focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-4"
+                  className="flex items-center justify-center w-12 h-12 border border-marmorino/40 text-concrete/85 hover:text-bronze hover:border-bronze transition-all duration-300 ease-[var(--ease-premium)] focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-4"
                 >
                   <InstagramIcon size={16} />
                 </a>
@@ -143,7 +143,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Facebook da Biodonth (${SOCIAL.facebook.handle})`}
-                  className="flex items-center justify-center w-10 h-10 border border-marmorino/40 text-concrete/85 hover:text-bronze hover:border-bronze transition-all duration-300 ease-[var(--ease-premium)] focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-4"
+                  className="flex items-center justify-center w-12 h-12 border border-marmorino/40 text-concrete/85 hover:text-bronze hover:border-bronze transition-all duration-300 ease-[var(--ease-premium)] focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-4"
                 >
                   <FacebookIcon size={16} />
                 </a>
@@ -166,13 +166,13 @@ export function Footer() {
           <div className="flex items-center gap-5">
             <Link
               href={FOOTER.legal.privacyLink.href}
-              className="font-body text-[12px] text-marmorino-light hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2"
+              className="font-body text-[12px] text-marmorino-light hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2 py-3"
             >
               {FOOTER.legal.privacyLink.label}
             </Link>
             <Link
               href={FOOTER.legal.termsLink.href}
-              className="font-body text-[12px] text-marmorino-light hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2"
+              className="font-body text-[12px] text-marmorino-light hover:text-bronze transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-bronze focus-visible:outline-offset-2 py-3"
             >
               {FOOTER.legal.termsLink.label}
             </Link>

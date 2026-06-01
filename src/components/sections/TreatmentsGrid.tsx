@@ -13,7 +13,7 @@ export function TreatmentsGrid() {
       <Container>
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-14 md:mb-20">
-          <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+          <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
             {HOME_TREATMENTS.eyebrow}
           </p>
           <DisplayHeadline

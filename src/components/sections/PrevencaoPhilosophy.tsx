@@ -18,7 +18,7 @@ export function PrevencaoPhilosophy() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={TRANSITION_DEFAULT}
-          className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6"
+          className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6"
         >
           {philosophy.eyebrow}
         </motion.p>

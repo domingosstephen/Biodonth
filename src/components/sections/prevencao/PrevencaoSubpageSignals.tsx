@@ -14,7 +14,7 @@ export function PrevencaoSubpageSignals({ content }: { content: PrevencaoContent
       <Container width="wide">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 xl:gap-20">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} transition={{ staggerChildren: 0.12 }} className="lg:col-span-5">
-            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">{signals.eyebrow}</motion.p>
+            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">{signals.eyebrow}</motion.p>
             <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>
               <DisplayHeadline bronze={signals.title} bronzeItalic={signals.titleItalic} align="left" />
             </motion.div>

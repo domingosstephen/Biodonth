@@ -89,7 +89,7 @@ export function Testimonials({ testimonials, summary }: TestimonialsProps) {
       <Container width="wide">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-10 md:mb-14">
-          <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+          <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
             {HOME_TESTIMONIALS.eyebrow}
           </p>
           <DisplayHeadline

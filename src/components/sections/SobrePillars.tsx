@@ -19,7 +19,7 @@ export function SobrePillars() {
           transition={{ staggerChildren: 0.12 }}
           className="max-w-3xl mx-auto text-center mb-14 md:mb-18 lg:mb-22"
         >
-          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
             {pillars.eyebrow}
           </motion.p>
           <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>

@@ -21,19 +21,19 @@ export function NavUtilityRow({ hidden }: NavUtilityRowProps) {
       <Container className="flex items-center justify-between py-2">
         <a
           href={TEL_URL}
-          className="inline-flex items-center gap-2 text-[13px] text-marmorino hover:text-bronze transition-colors duration-300"
+          className="inline-flex items-center gap-2 text-[13px] text-marmorino hover:text-bronze transition-colors duration-300 py-1"
         >
           <Phone size={14} />
           <span>{CONTACT.phone.display}</span>
         </a>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <a
             href={SOCIAL.instagram.url}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram da Biodonth"
-            className="text-marmorino hover:text-bronze transition-colors duration-300"
+            className="flex items-center justify-center w-9 h-9 text-marmorino hover:text-bronze transition-colors duration-300"
           >
             <InstagramIcon size={16} />
           </a>
@@ -42,7 +42,7 @@ export function NavUtilityRow({ hidden }: NavUtilityRowProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook da Biodonth"
-            className="text-marmorino hover:text-bronze transition-colors duration-300"
+            className="flex items-center justify-center w-9 h-9 text-marmorino hover:text-bronze transition-colors duration-300"
           >
             <FacebookIcon size={16} />
           </a>

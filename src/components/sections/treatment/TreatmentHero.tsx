@@ -33,7 +33,7 @@ export function TreatmentHero({ treatment, content }: Props) {
 
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-16 items-center">
           <motion.div initial="hidden" animate="visible" transition={{ staggerChildren: 0.15, delayChildren: 0.1 }} className="lg:col-span-5 order-2 lg:order-1">
-            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">{hero.eyebrow}</motion.p>
+            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">{hero.eyebrow}</motion.p>
             <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>
               <DisplayHeadline bronze={hero.bronze} bronzeItalic={hero.bronzeItalic} align="left" reveal />
             </motion.div>

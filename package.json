@@ -8,6 +8,14 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions",
+    "not dead",
+    "not ie 11"
+  ],
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.0",
     "@types/node": "^25.6.2",

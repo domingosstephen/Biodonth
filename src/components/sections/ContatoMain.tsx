@@ -25,7 +25,7 @@ export function ContatoMain() {
             transition={{ staggerChildren: 0.1 }}
             className="lg:col-span-5"
           >
-            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
               {channels.eyebrow}
             </motion.p>
             <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>
@@ -48,7 +48,7 @@ export function ContatoMain() {
                     <MessageCircle className="w-5 h-5" strokeWidth={1.8} />
                   </span>
                   <div className="flex-1">
-                    <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze font-medium mb-1">{channels.whatsapp.label}</p>
+                    <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze-dark font-medium mb-1">{channels.whatsapp.label}</p>
                     <p className="font-display text-[clamp(20px,2vw,24px)] text-charcoal leading-tight mb-2 transition-colors duration-300 group-hover:text-bronze">{CONTACT.whatsapp.display}</p>
                     <p className="font-body text-[14px] text-marmorino leading-relaxed">{channels.whatsapp.description}</p>
                     <span className="mt-3 inline-flex items-center gap-1.5 font-body text-[13px] font-medium text-bronze">
@@ -71,7 +71,7 @@ export function ContatoMain() {
                     <PhoneIcon className="w-5 h-5" strokeWidth={1.8} />
                   </span>
                   <div className="flex-1">
-                    <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze font-medium mb-1">{channels.phone.label}</p>
+                    <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze-dark font-medium mb-1">{channels.phone.label}</p>
                     <p className="font-display text-[clamp(20px,2vw,24px)] text-charcoal leading-tight mb-2 transition-colors duration-300 group-hover:text-bronze">{CONTACT.phone.display}</p>
                     <p className="font-body text-[14px] text-marmorino leading-relaxed">{channels.phone.description}</p>
                   </div>
@@ -90,7 +90,7 @@ export function ContatoMain() {
                     <Mail className="w-5 h-5" strokeWidth={1.8} />
                   </span>
                   <div className="flex-1">
-                    <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze font-medium mb-1">{channels.email.label}</p>
+                    <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze-dark font-medium mb-1">{channels.email.label}</p>
                     <p className="font-display text-[clamp(18px,1.8vw,22px)] text-charcoal leading-tight mb-2 transition-colors duration-300 group-hover:text-bronze break-all">{CONTACT.email}</p>
                     <p className="font-body text-[14px] text-marmorino leading-relaxed">{channels.email.description}</p>
                   </div>
@@ -108,7 +108,7 @@ export function ContatoMain() {
                     <MapPin className="w-5 h-5" strokeWidth={1.8} />
                   </span>
                   <div className="flex-1">
-                    <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze font-medium mb-1">{channels.visit.label}</p>
+                    <p className="font-body uppercase text-[11px] tracking-[0.18em] text-bronze-dark font-medium mb-1">{channels.visit.label}</p>
                     <p className="font-display text-[clamp(16px,1.6vw,18px)] text-charcoal leading-snug mb-2">{CONTACT.address.short}</p>
                     <p className="font-body text-[14px] text-marmorino leading-relaxed">{channels.visit.description}</p>
                     <div className="mt-3 space-y-0.5 font-body text-[13px] text-marmorino-light">
@@ -130,7 +130,7 @@ export function ContatoMain() {
             className="lg:col-span-7"
           >
             <div className="bg-pure border-[1.5px] border-marmorino-light/40 p-8 md:p-10 lg:p-12 lg:sticky lg:top-32">
-              <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-4">
+              <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-4">
                 Formul\u00e1rio
               </p>
               <h2 className="font-display font-normal text-[clamp(28px,3vw,38px)] leading-[1.15] tracking-[-0.01em] text-charcoal mb-3">

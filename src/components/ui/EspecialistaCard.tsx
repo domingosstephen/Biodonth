@@ -53,7 +53,7 @@ export function EspecialistaCard({ especialista }: EspecialistaCardProps) {
 
       {/* Text block */}
       <div className="mt-6 md:mt-7">
-        <p className="font-body uppercase text-[11px] md:text-[12px] tracking-[0.18em] text-bronze font-medium mb-2">
+        <p className="font-body uppercase text-[11px] md:text-[12px] tracking-[0.18em] text-bronze-dark font-medium mb-2">
           {especialista.role}
         </p>
 

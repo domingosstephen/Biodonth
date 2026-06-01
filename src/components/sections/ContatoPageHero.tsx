@@ -47,7 +47,7 @@ export function ContatoPageHero() {
           transition={{ staggerChildren: 0.15, delayChildren: 0.1 }}
           className="max-w-4xl"
         >
-          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+          <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
             {hero.eyebrow}
           </motion.p>
           <motion.div variants={FADE_UP} transition={TRANSITION_DEFAULT}>

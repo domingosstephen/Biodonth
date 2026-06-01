@@ -20,7 +20,7 @@ export function SobreOrigin() {
             transition={{ staggerChildren: 0.12 }}
             className="lg:col-span-5"
           >
-            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze font-medium mb-6">
+            <motion.p variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-6">
               {origin.eyebrow}
             </motion.p>
             <motion.h2 variants={FADE_UP} transition={TRANSITION_DEFAULT} className="font-display font-normal text-[clamp(32px,4vw,48px)] leading-[1.15] tracking-[-0.01em] text-charcoal">
