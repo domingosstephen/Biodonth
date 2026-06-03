@@ -12,18 +12,18 @@ export function Hero() {
       className="relative bg-concrete overflow-hidden pt-32 md:pt-36 lg:pt-40 pb-16 md:pb-20 lg:pb-24"
     >
       {/* Image — positioned right, with a left-to-right gradient fade into bg */}
-      <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] xl:w-[50%]">
+      <div className="absolute inset-y-0 right-0 w-full lg:w-[58%] xl:w-[55%]">
         <Image
           src="/images/hero/hero-biodonth.jpg"
           alt={HOME_HERO.image.alt}
           fill
           priority
-          sizes="(max-width: 1024px) 100vw, 55vw"
+          sizes="(max-width: 1024px) 100vw, 58vw"
           className="object-cover object-center"
         />
-        {/* Gradient that fades image into the concrete background on the left edge */}
+        {/* Narrow gradient that fades only the left edge into the concrete background */}
         <div
-          className="absolute inset-0 bg-gradient-to-r from-concrete via-concrete/60 to-transparent"
+          className="absolute inset-y-0 left-0 w-[30%] bg-gradient-to-r from-concrete to-transparent"
           aria-hidden="true"
         />
         {/* Subtle bottom fade for clean section transition */}
