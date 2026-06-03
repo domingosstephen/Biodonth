@@ -9,16 +9,16 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative bg-concrete overflow-hidden pt-28 md:pt-32 lg:pt-36 pb-10 md:pb-14 lg:pb-16"
+      className="relative bg-concrete overflow-hidden pt-24 md:pt-28 lg:pt-32 pb-8 md:pb-12 lg:pb-14"
     >
       {/* Desktop: image positioned right with gradient fade */}
-      <div className="hidden lg:block absolute inset-y-0 right-0 w-[58%] xl:w-[55%]">
+      <div className="hidden lg:block absolute inset-y-0 right-0 w-[55%] xl:w-[50%]">
         <Image
           src="/images/hero/hero-biodonth.jpg"
           alt={HOME_HERO.image.alt}
           fill
           priority
-          sizes="58vw"
+          sizes="55vw"
           className="object-cover object-top"
         />
         {/* Left edge fade into concrete */}
@@ -34,10 +34,10 @@ export function Hero() {
       </div>
 
       <Container width="wide" className="relative z-10">
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-center">
+        <div className="grid lg:grid-cols-12 gap-6 lg:gap-10 xl:gap-14 items-center">
           {/* Text content — first on mobile, left on desktop */}
           <div className="lg:col-span-6 xl:col-span-5 order-1">
-            <p className="font-body uppercase text-[12px] md:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-4">
+            <p className="font-body uppercase text-[11px] md:text-[12px] lg:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-3 lg:mb-4">
               {HOME_HERO.eyebrow}
             </p>
 
@@ -46,9 +46,10 @@ export function Hero() {
               bronzeItalic={HOME_HERO.bronzeItalic}
               subhead={HOME_HERO.subhead}
               align="left"
+              className="[&>h1]:text-[clamp(32px,5.5vw,72px)] [&>p]:text-[clamp(15px,1.8vw,22px)] [&>p]:mt-3"
             />
 
-            <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="mt-6 lg:mt-8 flex flex-row items-center gap-3 sm:gap-4">
               <Button
                 variant="pill"
                 as="a"
@@ -59,9 +60,10 @@ export function Hero() {
                 {HOME_HERO.primaryCta.label}
               </Button>
               <Button
-                variant="ghost"
+                variant="pill"
                 as="a"
                 href={HOME_HERO.secondaryCta.href}
+                className="bg-transparent text-bronze border border-bronze hover:bg-bronze hover:text-pure"
               >
                 {HOME_HERO.secondaryCta.label}
               </Button>
