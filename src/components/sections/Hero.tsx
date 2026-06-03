@@ -50,14 +50,14 @@ export function Hero() {
 
           {/* Desktop: image in grid column with left-edge gradient fade */}
           <div className="hidden lg:block lg:col-span-7 order-2 relative">
-            <div className="relative max-w-md xl:max-w-lg ml-auto">
+            <div className="relative">
               <Image
                 src="/images/hero/hero-biodonth.jpg"
                 alt={HOME_HERO.image.alt}
-                width={600}
-                height={750}
+                width={1200}
+                height={1500}
                 priority
-                sizes="(max-width: 1280px) 35vw, 450px"
+                sizes="(max-width: 1280px) 58vw, 700px"
                 className="block w-full h-auto"
               />
               {/* Left edge gradient fade into concrete */}
