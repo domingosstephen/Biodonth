@@ -9,34 +9,12 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative bg-concrete overflow-hidden pt-24 md:pt-28 lg:pt-32 pb-8 md:pb-12 lg:pb-14"
+      className="relative bg-concrete overflow-hidden pt-24 md:pt-28 lg:pt-32 pb-8 md:pb-12 lg:pb-0"
     >
-      {/* Desktop: image positioned right with gradient fade */}
-      <div className="hidden lg:block absolute inset-y-0 right-0 w-[55%] xl:w-[50%]">
-        <Image
-          src="/images/hero/hero-biodonth.jpg"
-          alt={HOME_HERO.image.alt}
-          fill
-          priority
-          sizes="55vw"
-          className="object-cover object-top"
-        />
-        {/* Left edge fade into concrete */}
-        <div
-          className="absolute inset-y-0 left-0 w-[30%] bg-gradient-to-r from-concrete to-transparent"
-          aria-hidden="true"
-        />
-        {/* Bottom fade for clean section transition */}
-        <div
-          className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-concrete to-transparent"
-          aria-hidden="true"
-        />
-      </div>
-
       <Container width="wide" className="relative z-10">
-        <div className="grid lg:grid-cols-12 gap-6 lg:gap-10 xl:gap-14 items-center">
+        <div className="grid lg:grid-cols-12 gap-6 lg:gap-0 items-center">
           {/* Text content — first on mobile, left on desktop */}
-          <div className="lg:col-span-6 xl:col-span-5 order-1">
+          <div className="lg:col-span-5 xl:col-span-5 order-1 lg:py-8">
             <p className="font-body uppercase text-[11px] md:text-[12px] lg:text-[13px] tracking-[0.18em] text-bronze-dark font-medium mb-3 lg:mb-4">
               {HOME_HERO.eyebrow}
             </p>
@@ -67,6 +45,31 @@ export function Hero() {
               >
                 {HOME_HERO.secondaryCta.label}
               </Button>
+            </div>
+          </div>
+
+          {/* Desktop: image in grid column with left-edge gradient fade */}
+          <div className="hidden lg:block lg:col-span-7 order-2 relative">
+            <div className="relative">
+              <Image
+                src="/images/hero/hero-biodonth.jpg"
+                alt={HOME_HERO.image.alt}
+                width={1200}
+                height={1500}
+                priority
+                sizes="(max-width: 1280px) 58vw, 700px"
+                className="block w-full h-auto"
+              />
+              {/* Left edge gradient fade into concrete */}
+              <div
+                className="absolute inset-y-0 left-0 w-[25%] bg-gradient-to-r from-concrete to-transparent"
+                aria-hidden="true"
+              />
+              {/* Bottom fade for clean section transition */}
+              <div
+                className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-concrete to-transparent"
+                aria-hidden="true"
+              />
             </div>
           </div>
 

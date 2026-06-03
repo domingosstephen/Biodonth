@@ -26,7 +26,7 @@ export function TreatmentsGrid() {
         </div>
 
         {/* Team image */}
-        <div className="mb-10 md:mb-14 overflow-hidden rounded-sm border-[1.5px] border-bronze">
+        <div className="mb-10 md:mb-14 overflow-hidden rounded-sm border-[1.5px] md:border-[2.5px] lg:border-[3px] border-bronze">
           <Image
             src="/images/team-biodonth.jpg"
             alt="Equipe completa da Biodonth Odontologia Integrada"
